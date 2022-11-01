@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 391723912}
   - component: {fileID: 391723911}
   m_Layer: 0
-  m_Name: checkpointManager
+  m_Name: checkpointmanager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: fa19b734a9e40034390f362e9699a6ac, type: 3}
   videoCheckpoint: {fileID: 0}
-  checkpoint: {fileID: 0}
+  checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 1561ed43bfff975408a37f914b11db7f, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 0}
-  checkpoint: {fileID: 0}
+  checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -2078,8 +2078,8 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 1531549443}
-  checkpoint: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  checkpoint: {fileID: 391723911}
+  loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   loopArray: 0
@@ -2667,7 +2667,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 0de84baf409ac0d46b025be1e6f3fb73, type: 3}
   videoCheckpoint: {fileID: 0}
-  checkpoint: {fileID: 0}
+  checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -2912,7 +2912,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 0}
-  checkpoint: {fileID: 0}
+  checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}

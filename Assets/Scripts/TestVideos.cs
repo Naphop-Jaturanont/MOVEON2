@@ -10,7 +10,7 @@ public class TestVideos : MonoBehaviour
     public VideoClip[] videoClip;
     public VideoCheckpoint videoCheckpoint;
     public Checkpoint checkpoint;
-    public GameObject loopWhileChoose;
+    public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
     public GameObject choice2 = null;
     public bool loopArray = false;
