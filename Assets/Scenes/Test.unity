@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -828,6 +828,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309355850}
   m_CullTransparentMesh: 1
+--- !u!1 &391723910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391723912}
+  - component: {fileID: 391723911}
+  m_Layer: 0
+  m_Name: checkpointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &391723911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391723910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08209c18c0d772643900b89be87b35ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkPointVideoWant: []
+--- !u!4 &391723912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391723910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407405794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1116,7 @@ GameObject:
   - component: {fileID: 592914351}
   - component: {fileID: 592914350}
   - component: {fileID: 592914349}
+  - component: {fileID: 592914352}
   m_Layer: 5
   m_Name: Video (3)
   m_TagString: Untagged
@@ -1094,7 +1140,13 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: fa19b734a9e40034390f362e9699a6ac, type: 3}
-  button: {fileID: 1536551454}
+  videoCheckpoint: {fileID: 0}
+  checkpoint: {fileID: 0}
+  loopWhileChoose: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  loopArray: 0
+  i: 0
 --- !u!328 &592914350
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1151,6 +1203,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &592914352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592914348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &614395271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1776,7 @@ GameObject:
   - component: {fileID: 1378945639}
   - component: {fileID: 1378945641}
   - component: {fileID: 1378945640}
+  - component: {fileID: 1378945642}
   m_Layer: 5
   m_Name: Video (2)
   m_TagString: Untagged
@@ -1756,7 +1821,13 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 1561ed43bfff975408a37f914b11db7f, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
-  button: {fileID: 1757116761}
+  videoCheckpoint: {fileID: 0}
+  checkpoint: {fileID: 0}
+  loopWhileChoose: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  loopArray: 0
+  i: 0
 --- !u!328 &1378945641
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1792,6 +1863,18 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1378945642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378945638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1525618353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +2032,7 @@ GameObject:
   - component: {fileID: 1531549440}
   - component: {fileID: 1531549442}
   - component: {fileID: 1531549441}
+  - component: {fileID: 1531549443}
   m_Layer: 5
   m_Name: Video
   m_TagString: Untagged
@@ -1993,7 +2077,13 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
-  button: {fileID: 69079815}
+  videoCheckpoint: {fileID: 1531549443}
+  checkpoint: {fileID: 0}
+  loopWhileChoose: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  loopArray: 0
+  i: 0
 --- !u!328 &1531549442
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -2029,6 +2119,18 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1531549443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531549439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536551454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2621,7 @@ GameObject:
   - component: {fileID: 1828276464}
   - component: {fileID: 1828276466}
   - component: {fileID: 1828276465}
+  - component: {fileID: 1828276467}
   m_Layer: 5
   m_Name: Video (4)
   m_TagString: Untagged
@@ -2563,7 +2666,13 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 0de84baf409ac0d46b025be1e6f3fb73, type: 3}
-  button: {fileID: 407405794}
+  videoCheckpoint: {fileID: 0}
+  checkpoint: {fileID: 0}
+  loopWhileChoose: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  loopArray: 0
+  i: 0
 --- !u!328 &1828276466
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -2599,6 +2708,18 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1828276467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828276463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1878683026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,6 +2866,7 @@ GameObject:
   - component: {fileID: 2130868837}
   - component: {fileID: 2130868839}
   - component: {fileID: 2130868838}
+  - component: {fileID: 2130868840}
   m_Layer: 5
   m_Name: Video (1)
   m_TagString: Untagged
@@ -2789,7 +2911,13 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
-  button: {fileID: 435168007}
+  videoCheckpoint: {fileID: 0}
+  checkpoint: {fileID: 0}
+  loopWhileChoose: {fileID: 0}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  loopArray: 0
+  i: 0
 --- !u!328 &2130868839
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -2825,3 +2953,15 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &2130868840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130868836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

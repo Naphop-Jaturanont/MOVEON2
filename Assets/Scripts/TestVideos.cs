@@ -8,55 +8,85 @@ public class TestVideos : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public VideoClip[] videoClip;
-
+    public VideoCheckpoint videoCheckpoint;
+    public Checkpoint checkpoint;
+    public GameObject loopWhileChoose;
+    public GameObject choice1 = null;
+    public GameObject choice2 = null;
+    public bool loopArray = false;
     //public VideoClip videoClipchose1;
     //public VideoClip videoClipchose2;
-
-    public GameObject button;
-    int i = 0;
+    public int i = 0;
     bool chose;
 
-    void Awake()
+    private void Awake()
     {
-        videoPlayer.clip = videoClip[0];
-        //videoPlayer.clip = videoClip[i];
-        videoPlayer.Play();
-        /*
+        checkpoint = GameObject.Find("checkpointmanager").GetComponent<Checkpoint>();
+    }
+    private void Start()
+    {
         i = 0;
         videoPlayer.clip = videoClip[i];
         videoPlayer.Play();
-        */
-        
     }
-
-
-     void Update()
+    private void Update()
     {
-       
-        
+
         if (videoPlayer.isPaused == true && chose == false)
         {
-            i++;
-            if (i > videoClip.Length - 1)
-            {
-                i = 0;
-            }
-            //new clip to videoplayer
-            videoPlayer.clip = videoClip[i];
-            //Debug.Log(videoPlayer.clip);
-            //videoplayer play
-            videoPlayer.Play();
-            if(videoPlayer.clip = videoClip[1])
-            {
-                videoPlayer.isLooping = true;
-                button.gameObject.SetActive(true);
-            }
+            Debug.Log("gonext");
 
-     
+            if (loopArray == true)
+            {
+                if (i <= videoClip.Length - 1)
+                {
+                    i++;
+                    if (i > videoClip.Length - 1)
+                    {
+                        i = 0;
+                    }
+                }
+            }
+            if (loopArray == false)
+            {
+                if (i < videoClip.Length - 1)
+                {
+                    i++;
+                    videoCheckpoint.indexVideo = i;
+                }
+                else if (i >= videoClip.Length - 1)
+                {
+                    gameObject.SetActive(false);
+                    checkpoint.PassVideoWantCheck++;
+                    loopWhileChoose.SetActive(true);
+                    return;
+                }
+            }
+            videoPlayer.clip = videoClip[i];
+            videoPlayer.Play();
+
+
+            //new clip to videoplayer
+            //videoplayer play
+
         }
-            
-        
     }
 
-    
+    public void chooseChoice(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                gameObject.SetActive(false);
+                videoPlayer.Stop();
+                choice1.SetActive(true);
+
+                break;
+            case 2:
+                gameObject.SetActive(false);
+                videoPlayer.Stop();
+                choice2.SetActive(true);
+                break;
+        }
+    }
 }
