@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &69079816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1031,38 +1031,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1378945638}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1531549441}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: chooseChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1531549439}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1531549442}
-        m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
-        m_MethodName: set_isLooping
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1118,7 +1094,7 @@ GameObject:
   - component: {fileID: 592914349}
   - component: {fileID: 592914352}
   m_Layer: 5
-  m_Name: Video (3)
+  m_Name: videochoice2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1140,9 +1116,9 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: fa19b734a9e40034390f362e9699a6ac, type: 3}
-  videoCheckpoint: {fileID: 0}
+  videoCheckpoint: {fileID: 592914352}
   checkpoint: {fileID: 391723911}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   loopArray: 0
@@ -1367,38 +1343,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2130868836}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1531549441}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: chooseChoice
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1531549439}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1531549442}
-        m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
-        m_MethodName: set_isLooping
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1533,8 +1485,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1531549440}
   - {fileID: 2130868837}
+  - {fileID: 1531549440}
   - {fileID: 1378945639}
   - {fileID: 592914351}
   - {fileID: 1828276464}
@@ -1778,7 +1730,7 @@ GameObject:
   - component: {fileID: 1378945640}
   - component: {fileID: 1378945642}
   m_Layer: 5
-  m_Name: Video (2)
+  m_Name: Videochoice1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1821,9 +1773,9 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 1561ed43bfff975408a37f914b11db7f, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
-  videoCheckpoint: {fileID: 0}
+  videoCheckpoint: {fileID: 1378945642}
   checkpoint: {fileID: 391723911}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   loopArray: 0
@@ -1912,7 +1864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525618355
@@ -2034,12 +1986,12 @@ GameObject:
   - component: {fileID: 1531549441}
   - component: {fileID: 1531549443}
   m_Layer: 5
-  m_Name: Video
+  m_Name: VideoloopwhileChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1531549440
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2054,7 +2006,7 @@ RectTransform:
   m_Children:
   - {fileID: 69079816}
   m_Father: {fileID: 1038118162}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2079,10 +2031,10 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 1531549443}
   checkpoint: {fileID: 391723911}
-  loopWhileChoose: {fileID: 2130868836}
-  choice1: {fileID: 0}
-  choice2: {fileID: 0}
-  loopArray: 0
+  loopWhileChoose: {fileID: 1531549439}
+  choice1: {fileID: 1378945638}
+  choice2: {fileID: 592914348}
+  loopArray: 1
   i: 0
 --- !u!328 &1531549442
 VideoPlayer:
@@ -2666,7 +2618,7 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 0de84baf409ac0d46b025be1e6f3fb73, type: 3}
-  videoCheckpoint: {fileID: 0}
+  videoCheckpoint: {fileID: 1828276467}
   checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
@@ -2868,12 +2820,12 @@ GameObject:
   - component: {fileID: 2130868838}
   - component: {fileID: 2130868840}
   m_Layer: 5
-  m_Name: Video (1)
+  m_Name: Videostart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2130868837
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2888,7 +2840,7 @@ RectTransform:
   m_Children:
   - {fileID: 435168008}
   m_Father: {fileID: 1038118162}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2911,9 +2863,9 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
-  videoCheckpoint: {fileID: 0}
+  videoCheckpoint: {fileID: 2130868840}
   checkpoint: {fileID: 391723911}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 1531549439}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   loopArray: 0
