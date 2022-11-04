@@ -13,7 +13,21 @@ public class TestVideos : MonoBehaviour
     public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
     public GameObject choice2 = null;
+
+    [Space(10)]
+    [Header("Timer")]
+    [Tooltip("if you want timer when choose")]
+    public Image imageValue = null;
+    public bool timer = false;
+    public float time = 0;
+    private float maxTime = 0;
+    public float timeWhenChoose = 20;
+
+    [Space(10)]
+    [Header("Loop")]
+    [Tooltip("if you want loop Video in Array")]
     public bool loopArray = false;
+
     //public VideoClip videoClipchose1;
     //public VideoClip videoClipchose2;
     public int i = 0;
@@ -28,9 +42,19 @@ public class TestVideos : MonoBehaviour
         i = 0;
         videoPlayer.clip = videoClip[i];
         videoPlayer.Play();
+        maxTime = time;
     }
     private void Update()
     {
+        if(timer == true)
+        {
+            imageValue.fillAmount = time / maxTime;
+            time -= timeWhenChoose * Time.deltaTime;            
+            if(time <= 0)
+            {
+                timer = false;
+            }
+        }
 
         if (videoPlayer.isPaused == true && chose == false)
         {
