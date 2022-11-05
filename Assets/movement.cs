@@ -135,7 +135,7 @@ public class movement : MonoBehaviour
         }
     }
 
-    private void OnApplicationFocus(bool focus)
+    public void OnApplicationFocus(bool focus)
     {
         if (focus)
         {

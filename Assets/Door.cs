@@ -5,7 +5,7 @@ using UnityEngine;
 public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
-    private DialogueTrigger dialogueTrigger;
+    public DialogueTrigger dialogueTrigger;
     private movement Movement = null;
     private CharacterController character = null;
     private bool open = false;
@@ -13,17 +13,22 @@ public class Door : MonoBehaviour, IInteractable
 
     public interactsomething interactsomething => throw new System.NotImplementedException();
 
+    private void Awake()
+    {
+        //dialogueTrigger = dialogueTrigger.GetComponent<DialogueTrigger>();
+    }
     public bool Interact(Interactor interactor)
     {
         if(open == false)
         {
             Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
             character = GameObject.Find("MainCharacter1").GetComponent<CharacterController>();
+            Movement.OnApplicationFocus(false);
             character.enabled = false;
             Movement.enabled = false;
             Movement.rb.useGravity = false;
             Movement.rb.isKinematic = true;
-            Debug.Log("Opening door!");
+            Debug.Log(dialogueTrigger);
             dialogueTrigger.TriggerDialogue();
             open = true;
             return true;
@@ -31,6 +36,7 @@ public class Door : MonoBehaviour, IInteractable
         {
             Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
             character = GameObject.Find("MainCharacter1").GetComponent<CharacterController>();
+            Movement.OnApplicationFocus(true);
             character.enabled = true;
             Movement.enabled = true;
             Movement.rb.useGravity = true;
