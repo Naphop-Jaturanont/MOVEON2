@@ -4663,6 +4663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelIsUnlocked: 0
   continueScene: 0
+  openFirst: 0
   continueBtn: {fileID: 42754547}
 --- !u!4 &1166252164
 Transform:
