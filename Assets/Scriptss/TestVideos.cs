@@ -13,6 +13,7 @@ public class TestVideos : MonoBehaviour
     public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
     public GameObject choice2 = null;
+    public stage1 Stage1;
 
     [Space(10)]
     [Header("Timer")]
@@ -104,12 +105,39 @@ public class TestVideos : MonoBehaviour
                 gameObject.SetActive(false);
                 videoPlayer.Stop();
                 choice1.SetActive(true);
-
                 break;
             case 2:
                 gameObject.SetActive(false);
                 videoPlayer.Stop();
                 choice2.SetActive(true);
+                break;
+        }
+    }
+
+    public void addScore(int score)
+    {
+        switch (score)
+        {
+            case 1:
+                Stage1.scoreOfChoice += 1;
+                break;
+            case 2:
+                Stage1.scoreOfChoice -= 1;
+                break;
+        }
+    }
+
+    public void checkScore(string typeChoice)
+    {
+        switch (typeChoice)
+        {
+            case "noCheckScore":
+                Debug.Log(Stage1.scoreOfChoice);
+                break;
+            case "CheckScore":
+                Debug.Log(Stage1.scoreOfChoice);
+                //if(score < Stage1.scoreOfChoice)
+                //else
                 break;
         }
     }

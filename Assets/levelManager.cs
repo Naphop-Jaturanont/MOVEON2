@@ -15,19 +15,17 @@ public class levelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelIsUnlocked = PlayerPrefs.GetInt("levelisUlocked", levelIsUnlocked);
-
-        
+        levelIsUnlocked = PlayerPrefs.GetInt("levelisUlocked", levelIsUnlocked);        
     }
 
     private void Awake()
     {
         Debug.Log(openFirst);
-        if (openFirst == 0)
+        if (PlayerPrefs.GetInt("openFirst", openFirst) == 0)
         {
             continueBtn.interactable = false;
+            PlayerPrefs.SetInt("openFirst", 1);
             PlayerPrefs.SetInt("continueScene", 0);
-            openFirst = 1;
         }
         Debug.Log(PlayerPrefs.GetInt("continueScene", continueScene));
         if (PlayerPrefs.GetInt("continueScene", continueScene) > 1)

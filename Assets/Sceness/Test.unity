@@ -1210,6 +1210,7 @@ MonoBehaviour:
   loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 0}
   timer: 0
   time: 0
@@ -1928,6 +1929,7 @@ MonoBehaviour:
   loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 0}
   timer: 0
   time: 0
@@ -2188,6 +2190,7 @@ MonoBehaviour:
   loopWhileChoose: {fileID: 1531549439}
   choice1: {fileID: 1378945638}
   choice2: {fileID: 592914348}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 1963937037}
   timer: 1
   time: 20
@@ -2781,6 +2784,7 @@ MonoBehaviour:
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
+  Stage1: {fileID: 0}
   imageValue: {fileID: 0}
   timer: 0
   time: 0
@@ -3107,6 +3111,7 @@ MonoBehaviour:
   loopWhileChoose: {fileID: 1531549439}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 0}
   timer: 0
   time: 0
