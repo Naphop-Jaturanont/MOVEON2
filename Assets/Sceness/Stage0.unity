@@ -1113,6 +1113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cb4389053ffad44a2cce83364f2e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: {fileID: 0}
 --- !u!1 &886087499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,17 +2243,17 @@ PrefabInstance:
     - target: {fileID: 1066898238249405214, guid: a8d424e8481dbb9469d9a58935d3d12f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10202462
+      value: 0.10202461
       objectReference: {fileID: 0}
     - target: {fileID: 1066898238249405214, guid: a8d424e8481dbb9469d9a58935d3d12f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.71089464
+      value: 0.7108947
       objectReference: {fileID: 0}
     - target: {fileID: 1066898238249405214, guid: a8d424e8481dbb9469d9a58935d3d12f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.105446786
+      value: -0.10544677
       objectReference: {fileID: 0}
     - target: {fileID: 1066898238362434990, guid: a8d424e8481dbb9469d9a58935d3d12f,
         type: 3}
@@ -2748,7 +2749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff17079d40d406f41af9fbe76d03c15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage1: {fileID: 0}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
 --- !u!4 &2020914814
 Transform:
   m_ObjectHideFlags: 0

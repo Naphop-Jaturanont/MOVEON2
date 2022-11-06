@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TrigerToNext : MonoBehaviour
 {
+    public levelPass level;
     private void OnTriggerEnter(Collider other)
     {
+        
         if(other.tag == "Player")
         {
+            level.UnlockWay(0);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             movement Move = GameObject.Find("MainCharacter1").GetComponent<movement>();
             Move.OnApplicationFocus(false);
