@@ -19,6 +19,7 @@ public class TestVideos : MonoBehaviour
     [Header("Timer")]
     [Tooltip("if you want timer when choose")]
     public Image imageValue = null;
+    public Image imageValue1 = null;
     public bool timer = false;
     public float time = 0;
     private float maxTime = 0;
@@ -50,6 +51,10 @@ public class TestVideos : MonoBehaviour
         if(timer == true)
         {
             imageValue.fillAmount = time / maxTime;
+            if(imageValue1)
+            {
+                imageValue1.fillAmount = time / maxTime;
+            }            
             time -= timeWhenChoose * Time.deltaTime;            
             if(time <= 0)
             {
