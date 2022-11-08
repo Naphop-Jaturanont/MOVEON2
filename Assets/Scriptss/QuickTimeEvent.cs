@@ -22,7 +22,7 @@ public class QuickTimeEvent : MonoBehaviour
     [Space(10)]
     [Header("Important")]
     [Tooltip("!!Must Have!!")]
-    public KeyCode key1;
+    public KeyCode key1 = KeyCode.None;
     public int success;
     public int fail;
 
