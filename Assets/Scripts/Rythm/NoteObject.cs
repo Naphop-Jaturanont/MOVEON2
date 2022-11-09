@@ -12,6 +12,7 @@ public class NoteObject : MonoBehaviour
     public Color pressedColor = Color.green;//
 
     public bool k;
+    public bool finalNote;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class NoteObject : MonoBehaviour
             canBePressed = false;
             if (k == false)
             {
+                checkNote.quickTime.checkRhythm("fail");
                 Debug.Log("Miss");
             }
         }

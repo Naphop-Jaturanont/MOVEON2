@@ -14,8 +14,8 @@ public class DraggableUI : MonoBehaviour, IDragHandler
     private Transform _point1;
     private Transform _point2;
     
-    public RawImage img;
-    public RawImage img2;
+    public RawImage imgTarget;
+    public RawImage imgTargetPress;
 
     public bool checkPosition = false;
 
@@ -24,6 +24,7 @@ public class DraggableUI : MonoBehaviour, IDragHandler
         if (Input.GetMouseButton(0))
         {
             UpdateMousePosition();
+            CheckPosition();
         }
         else if (Input.GetMouseButtonDown(0))
         {
@@ -57,9 +58,13 @@ public class DraggableUI : MonoBehaviour, IDragHandler
 
     public void CheckPosition()
     {
-        if (!checkPosition)
+        if (Vector3.Distance(imgTarget.transform.position,imgTargetPress.transform.position) < 5f)
         {
             checkPosition = true;
+        }
+        else
+        {
+            checkPosition = false;
         }
     }
 
@@ -70,4 +75,5 @@ public class DraggableUI : MonoBehaviour, IDragHandler
             checkPosition = false;
         }
     }
+
 }

@@ -30,6 +30,7 @@ public class QuickTimeEvent : MonoBehaviour
     [Header("Have or Not Have")]
     public KeyCode key2 = KeyCode.None;
     public Image fillImage = null;
+    public DraggableUI draggableUI = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +53,6 @@ public class QuickTimeEvent : MonoBehaviour
                 break;
             case TypeQuickEvent.Rhythm:
                 panelQuicktime.SetActive(true);
-                checkRhythm();
                 break;
             case TypeQuickEvent.Aim:
                 panelQuicktime.SetActive(true);
@@ -119,13 +119,27 @@ public class QuickTimeEvent : MonoBehaviour
         }
     }
 
-    public void checkRhythm()
+    public void checkRhythm(string type)
     {
-
+        switch (type)
+        {
+            case "finish":
+                videos.chooseChoice(success);
+                break;
+            case "fail":
+                videos.chooseChoice(fail);
+                break;
+        }
     }
 
     public void checkAim()
     {
-
+        if(draggableUI.checkPosition == true)
+        {
+            videos.chooseChoice(success);
+        }else if(draggableUI.checkPosition == false && videos.time <= 0)
+        {
+            videos.chooseChoice(fail);
+        }
     }
 }
