@@ -4284,7 +4284,7 @@ MonoBehaviour:
   videoCheckpoint: {fileID: 1056072949}
   checkpoint: {fileID: 391723911}
   loopWhileChoose: {fileID: 1056072947}
-  choice1: {fileID: 1378945638}
+  choice1: {fileID: 391426823}
   choice2: {fileID: 592914348}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 1552439105}
@@ -5097,7 +5097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E1E\u0E34\u0E4C"
+  m_text: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2D\u0E30\u0E44\u0E23\u0E01\u0E47\u0E44\u0E14\u0E49"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4469b568f1020244d9baa541f916afc2, type: 2}
   m_sharedMaterial: {fileID: 1780700443476566510, guid: 4469b568f1020244d9baa541f916afc2,
