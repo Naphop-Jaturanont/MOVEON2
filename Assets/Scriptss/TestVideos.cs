@@ -3,13 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public enum typePlay
+{
+    playOnce,
+    loop,
+    playOneFrame
+}
 
 public class TestVideos : MonoBehaviour
 {
+    public typePlay type;
     public VideoPlayer videoPlayer;
     public VideoClip[] videoClip;
     public VideoCheckpoint videoCheckpoint;
-    public Checkpoint checkpoint;
+    private Checkpoint checkpoint;
+    private QuickTimeEvent quickTime;
+    public GameObject inGame = null;
     public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
     public GameObject choice2 = null;
@@ -30,6 +41,17 @@ public class TestVideos : MonoBehaviour
     [Tooltip("if you want loop Video in Array")]
     public bool loopArray = false;
 
+    [Space(10)]
+    [Header("oneFrame")]
+    [Tooltip("if you want play Video each frame")]
+    public bool oneFrame = false;
+
+    [Space(10)]
+    [Header("oneFrame")]
+    [Tooltip("if you want play final Video before ingame")]
+    public bool finalVdoBeforeInGame = false;
+    public bool finalVdo = false;
+
     //public VideoClip videoClipchose1;
     //public VideoClip videoClipchose2;
     public int i = 0;
@@ -38,6 +60,7 @@ public class TestVideos : MonoBehaviour
     private void Awake()
     {
         checkpoint = GameObject.Find("checkpointmanager").GetComponent<Checkpoint>();
+        quickTime = GetComponent<QuickTimeEvent>();
     }
     private void Start()
     {
@@ -48,7 +71,90 @@ public class TestVideos : MonoBehaviour
     }
     private void Update()
     {
-        if(timer == true)
+        switch (type)
+        {
+            case typePlay.playOnce:
+                if (videoPlayer.isPaused == true && chose == false)
+                {
+                    if (loopArray == false)
+                    {
+                        if (i < videoClip.Length - 1)
+                        {
+                            i++;
+                            videoCheckpoint.indexVideo = i;
+                        }
+                        else if (i >= videoClip.Length - 1)
+                        {
+                            if(finalVdoBeforeInGame == true)
+                            {
+                                inGame.SetActive(true);
+                                gameObject.SetActive(false);
+                                return;
+                            }else if(finalVdo == true)
+                            {
+                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                            }
+                            else
+                            {
+                                gameObject.SetActive(false);
+                                checkpoint.PassVideoWantCheck++;
+                                loopWhileChoose.SetActive(true);
+                                return;
+                            }
+                            
+                        }
+                    }
+                    videoPlayer.clip = videoClip[i];
+                    videoPlayer.Play();
+                }
+                break;
+            case typePlay.loop:
+                if (videoPlayer.isPaused == true && chose == false)
+                {
+                    Debug.Log("gonext");
+
+                    if (loopArray == true)
+                    {
+                        if (i <= videoClip.Length - 1)
+                        {
+                            i++;
+                            if (i > videoClip.Length - 1)
+                            {
+                                i = 0;
+                            }
+                        }
+                    }
+                    videoPlayer.clip = videoClip[i];
+                    videoPlayer.Play();
+
+                }
+                break;
+            case typePlay.playOneFrame:
+                if (videoPlayer.isPaused == true && chose == false)
+                {
+                    if (Input.GetKeyDown(quickTime.key1))
+                    {
+                        if (i < videoClip.Length - 1)
+                        {
+                            i++;
+                            videoCheckpoint.indexVideo = i;
+                        }
+                        else if (i >= videoClip.Length - 1)
+                        {
+                            gameObject.SetActive(false);
+                            checkpoint.PassVideoWantCheck++;
+                            loopWhileChoose.SetActive(true);
+                            return;
+                        }
+                    }                    
+                    videoPlayer.clip = videoClip[i];
+                    videoPlayer.Play();
+                }
+                break;
+        }
+        
+
+        if (timer == true)
         {
             imageValue.fillAmount = time / maxTime;
             if(imageValue1)
@@ -60,45 +166,6 @@ public class TestVideos : MonoBehaviour
             {
                 timer = false;
             }
-        }
-
-        if (videoPlayer.isPaused == true && chose == false)
-        {
-            Debug.Log("gonext");
-
-            if (loopArray == true)
-            {
-                if (i <= videoClip.Length - 1)
-                {
-                    i++;
-                    if (i > videoClip.Length - 1)
-                    {
-                        i = 0;
-                    }
-                }
-            }
-            if (loopArray == false)
-            {
-                if (i < videoClip.Length - 1)
-                {
-                    i++;
-                    videoCheckpoint.indexVideo = i;
-                }
-                else if (i >= videoClip.Length - 1)
-                {
-                    gameObject.SetActive(false);
-                    checkpoint.PassVideoWantCheck++;
-                    loopWhileChoose.SetActive(true);
-                    return;
-                }
-            }
-            videoPlayer.clip = videoClip[i];
-            videoPlayer.Play();
-
-
-            //new clip to videoplayer
-            //videoplayer play
-
         }
     }
 

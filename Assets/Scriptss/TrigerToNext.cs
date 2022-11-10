@@ -5,7 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class TrigerToNext : MonoBehaviour
 {
-    public levelPass level;
+    public GameObject vdoWantPlay;
+    public GameObject inGame;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            inGame.SetActive(false);
+            vdoWantPlay.SetActive(true);
+        }
+    }
+    /*public levelPass level;
     private void OnTriggerEnter(Collider other)
     {
         
@@ -16,5 +27,5 @@ public class TrigerToNext : MonoBehaviour
             movement Move = GameObject.Find("MainCharacter1").GetComponent<movement>();
             Move.OnApplicationFocus(false);
         }
-    }
+    }*/
 }
