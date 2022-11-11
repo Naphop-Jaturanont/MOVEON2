@@ -576,12 +576,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 81124633}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 81124632}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 81124629}
   choice1: {fileID: 1378945638}
   choice2: {fileID: 592914348}
@@ -592,6 +593,9 @@ MonoBehaviour:
   time: 20
   timeWhenChoose: 2
   loopArray: 1
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!114 &81124632
 MonoBehaviour:
@@ -2332,12 +2336,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 391426827}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 391426826}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 391426823}
   choice1: {fileID: 1378945638}
   choice2: {fileID: 592914348}
@@ -2348,6 +2353,9 @@ MonoBehaviour:
   time: 20
   timeWhenChoose: 2
   loopArray: 1
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!114 &391426826
 MonoBehaviour:
@@ -2758,12 +2766,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 592914350}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: fa19b734a9e40034390f362e9699a6ac, type: 3}
   videoCheckpoint: {fileID: 592914352}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -2774,6 +2783,9 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   loopArray: 0
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!328 &592914350
 VideoPlayer:
@@ -4081,7 +4093,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4277,12 +4289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 1056072951}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 1056072949}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1056072947}
   choice1: {fileID: 391426823}
   choice2: {fileID: 592914348}
@@ -4293,6 +4306,9 @@ MonoBehaviour:
   time: 20
   timeWhenChoose: 1
   loopArray: 1
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!328 &1056072951
 VideoPlayer:
@@ -6107,12 +6123,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 1378945641}
   videoClip:
   - {fileID: 32900000, guid: 1561ed43bfff975408a37f914b11db7f, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 1378945642}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 2130868836}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -6123,6 +6140,9 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   loopArray: 0
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!328 &1378945641
 VideoPlayer:
@@ -8043,12 +8063,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 1828276466}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 0de84baf409ac0d46b025be1e6f3fb73, type: 3}
   videoCheckpoint: {fileID: 1828276467}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -8059,6 +8080,9 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   loopArray: 0
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!328 &1828276466
 VideoPlayer:
@@ -8163,12 +8187,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 1828389146}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 1828389145}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1828389142}
   choice1: {fileID: 1378945638}
   choice2: {fileID: 592914348}
@@ -8179,6 +8204,9 @@ MonoBehaviour:
   time: 20
   timeWhenChoose: 2
   loopArray: 1
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!114 &1828389145
 MonoBehaviour:
@@ -9172,12 +9200,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   videoPlayer: {fileID: 2130868839}
   videoClip:
   - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 2130868840}
-  checkpoint: {fileID: 391723911}
+  inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1828389142}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
@@ -9188,6 +9217,9 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   loopArray: 0
+  oneFrame: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
   i: 0
 --- !u!328 &2130868839
 VideoPlayer:

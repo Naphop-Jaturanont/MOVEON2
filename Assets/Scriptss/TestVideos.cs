@@ -130,23 +130,20 @@ public class TestVideos : MonoBehaviour
                 }
                 break;
             case typePlay.playOneFrame:
-                if (videoPlayer.isPaused == true && chose == false)
+                if (Input.GetKeyDown(quickTime.key1))
                 {
-                    if (Input.GetKeyDown(quickTime.key1))
+                    if (i < videoClip.Length - 1)
                     {
-                        if (i < videoClip.Length - 1)
-                        {
-                            i++;
-                            videoCheckpoint.indexVideo = i;
-                        }
-                        else if (i >= videoClip.Length - 1)
-                        {
-                            gameObject.SetActive(false);
-                            checkpoint.PassVideoWantCheck++;
-                            loopWhileChoose.SetActive(true);
-                            return;
-                        }
-                    }                    
+                        i++;
+                        videoCheckpoint.indexVideo = i;
+                    }
+                    else if (i >= videoClip.Length - 1)
+                    {
+                        gameObject.SetActive(false);
+                        checkpoint.PassVideoWantCheck++;
+                        loopWhileChoose.SetActive(true);
+                        return;
+                    }
                     videoPlayer.clip = videoClip[i];
                     videoPlayer.Play();
                 }

@@ -9,7 +9,8 @@ public enum TypeQuickEvent
     RepeatPress,
     Rhythm,
     Aim,
-    QuiclPress
+    QuiclPress,
+    Dialogue
 }
 
 
