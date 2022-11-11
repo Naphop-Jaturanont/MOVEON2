@@ -20,6 +20,7 @@ public class TestVideos : MonoBehaviour
     public VideoCheckpoint videoCheckpoint;
     private Checkpoint checkpoint;
     private QuickTimeEvent quickTime;
+    private DialogOnVDO dialog;
     public GameObject inGame = null;
     public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
@@ -61,6 +62,7 @@ public class TestVideos : MonoBehaviour
     {
         checkpoint = GameObject.Find("checkpointmanager").GetComponent<Checkpoint>();
         quickTime = GetComponent<QuickTimeEvent>();
+        dialog = gameObject.transform.GetComponentInChildren<DialogOnVDO>();
     }
     private void Start()
     {
@@ -130,7 +132,7 @@ public class TestVideos : MonoBehaviour
                 }
                 break;
             case typePlay.playOneFrame:
-                if (Input.GetKeyDown(quickTime.key1))
+                if (Input.GetKeyDown(quickTime.key1) && dialog.maxLine == true)
                 {
                     if (i < videoClip.Length - 1)
                     {
@@ -144,8 +146,10 @@ public class TestVideos : MonoBehaviour
                         loopWhileChoose.SetActive(true);
                         return;
                     }
+
                     videoPlayer.clip = videoClip[i];
                     videoPlayer.Play();
+
                 }
                 break;
         }

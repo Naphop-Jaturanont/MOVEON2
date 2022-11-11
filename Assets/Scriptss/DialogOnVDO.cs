@@ -9,7 +9,8 @@ public class DialogOnVDO : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
-    private int index;
+    [HideInInspector]public int index;
+    public bool maxLine;
     private QuickTimeEvent quickTime;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class DialogOnVDO : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (Input.GetKeyDown(quickTime.key1))
         {
@@ -37,7 +38,16 @@ public class DialogOnVDO : MonoBehaviour
             {
                 StopAllCoroutines();
                 textMeshPro.text = lines[index];
+                
             }
+        }
+        if(textMeshPro.text == lines[index])
+        {
+            maxLine = true;
+        }
+        else
+        {
+            maxLine = false;
         }
     }
 
