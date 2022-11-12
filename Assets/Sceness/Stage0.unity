@@ -2171,8 +2171,7 @@ MonoBehaviour:
   type: 1
   videoPlayer: {fileID: 787940254}
   videoClip:
-  - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
-  - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
+  - {fileID: 32900000, guid: 40bb1dc0f56f9434fa7f30ea484980af, type: 3}
   videoCheckpoint: {fileID: 787940253}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 787940250}
@@ -2251,7 +2250,7 @@ MonoBehaviour:
   typeQuickEvent: 0
   videos: {fileID: 787940252}
   panelQuicktime: {fileID: 96865597}
-  key1: 113
+  key1: 32
   success: 1
   fail: 2
   key2: 101
@@ -4245,7 +4244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4287,12 +4286,14 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -4326,7 +4327,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
-  - {fileID: 32900000, guid: f0692e03dfd5d2e4eae2c8caad69d142, type: 3}
+  - {fileID: 32900000, guid: f2772e5eab4d58f4ba75a7ead1ed9e34, type: 3}
   videoCheckpoint: {fileID: 1812684683}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 787940250}
