@@ -4326,7 +4326,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
-  - {fileID: 32900000, guid: 4c81b92c9b502e14da92d41dcb6171a0, type: 3}
+  - {fileID: 32900000, guid: f0692e03dfd5d2e4eae2c8caad69d142, type: 3}
   videoCheckpoint: {fileID: 1812684683}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 787940250}
