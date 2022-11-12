@@ -6,6 +6,7 @@ using TMPro;
 public class DialogOnVDO : MonoBehaviour
 {
     public TextMeshProUGUI textMeshPro;
+    [TextArea]
     public string[] lines;
     public float textSpeed;
 

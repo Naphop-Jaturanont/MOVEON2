@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnNote : MonoBehaviour
 {
     public GameObject prefab;
+    public int indexWantChange;
     public Transform[] spawnPoint;
     public NoteObject noteObject = null;
     // Start is called before the first frame update
@@ -12,6 +13,8 @@ public class SpawnNote : MonoBehaviour
     {
         for(int i = 0; i < spawnPoint.Length; i++)
         {            
+            
+
             if(i == spawnPoint.Length-1)
             {
                 Debug.Log("Final");
@@ -19,8 +22,16 @@ public class SpawnNote : MonoBehaviour
                 noteObject.finalNote = true;
             }
             else
-            {
-                Instantiate(prefab, spawnPoint[i]);
+            {                
+                if (i == indexWantChange)
+                {
+                    noteObject = Instantiate(prefab, spawnPoint[i]).GetComponent<NoteObject>();
+                    noteObject.change = true;
+                }
+                else
+                {
+                    Instantiate(prefab, spawnPoint[i]);
+                }
             }
         }
     }

@@ -12,6 +12,7 @@ public class NoteObject : MonoBehaviour
     public Color pressedColor = Color.green;//
 
     public bool k;
+    public bool change;
     public bool finalNote;
 
     private void Start()
