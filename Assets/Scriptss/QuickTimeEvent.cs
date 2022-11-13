@@ -19,6 +19,9 @@ public class QuickTimeEvent : MonoBehaviour
     public TypeQuickEvent typeQuickEvent;
     public TestVideos videos;
     public GameObject panelQuicktime;
+    private Image imagePanelQ;//add animation
+    public Sprite whenTrue = null;//add animation
+    public Animator animator = null;//add animation
 
     [Space(10)]
     [Header("Important")]
@@ -35,7 +38,7 @@ public class QuickTimeEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        imagePanelQ = panelQuicktime.GetComponent<Image>();//add animation
     }
 
     // Update is called once per frame
@@ -83,12 +86,30 @@ public class QuickTimeEvent : MonoBehaviour
     {
         if (Input.GetKeyDown(key1))
         {
+            if(animator != null)
+            {
+                animator.SetTrigger("success");//add animation
+            }
+            if (whenTrue)
+            {
+                imagePanelQ.sprite = whenTrue;//add animation
+            }
+            Invoke("closeDelay", 1.5f);//add animation
             videos.chooseChoice(1);
         }
         if (Input.GetKeyDown(key2))
         {
+            if (animator != null)
+            {
+                animator.SetTrigger("success");//add animation
+            }
+            if (whenTrue)
+            {
+                imagePanelQ.sprite = whenTrue;//add animation
+            }
+            Invoke("closeDelay", 1.5f);//add animation
             videos.chooseChoice(2);
-        }
+        }        
     }
 
     public void checkRepeatPress()
@@ -142,5 +163,10 @@ public class QuickTimeEvent : MonoBehaviour
         {
             videos.chooseChoice(fail);
         }
+    }
+
+    public void closeDelay()
+    {
+        panelQuicktime.SetActive(false);        
     }
 }
