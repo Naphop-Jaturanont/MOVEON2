@@ -537,7 +537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &81124630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -256}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81124631
@@ -584,8 +584,8 @@ MonoBehaviour:
   videoCheckpoint: {fileID: 81124632}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 81124629}
-  choice1: {fileID: 1378945638}
-  choice2: {fileID: 592914348}
+  choice1: {fileID: 1828389142}
+  choice2: {fileID: 1828389142}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 1046478882}
   imageValue1: {fileID: 0}
@@ -659,7 +659,9 @@ MonoBehaviour:
   typeQuickEvent: 2
   videos: {fileID: 81124631}
   panelQuicktime: {fileID: 1855913753}
-  key1: 32
+  whenTrue: {fileID: 0}
+  animator: {fileID: 0}
+  key1: 113
   success: 2
   fail: 1
   key2: 101
@@ -2070,8 +2072,8 @@ RectTransform:
   m_GameObject: {fileID: 354915083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1242503284}
   m_RootOrder: 0
@@ -2079,7 +2081,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 200}
+  m_SizeDelta: {x: 62.4, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354915085
 MonoBehaviour:
@@ -2165,7 +2167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 572cc323ff27aba44ae5e43d8f2effb3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2391,8 +2393,8 @@ MonoBehaviour:
   videoCheckpoint: {fileID: 391426826}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 391426823}
-  choice1: {fileID: 1378945638}
-  choice2: {fileID: 592914348}
+  choice1: {fileID: 81124629}
+  choice2: {fileID: 81124629}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 263790252}
   imageValue1: {fileID: 0}
@@ -2466,6 +2468,8 @@ MonoBehaviour:
   typeQuickEvent: 1
   videos: {fileID: 391426825}
   panelQuicktime: {fileID: 57999081}
+  whenTrue: {fileID: 0}
+  animator: {fileID: 0}
   key1: 101
   success: 2
   fail: 1
@@ -3716,8 +3720,8 @@ RectTransform:
   m_GameObject: {fileID: 796862972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1242503284}
   m_RootOrder: 1
@@ -3725,7 +3729,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 200}
+  m_SizeDelta: {x: 61.62, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796862974
 MonoBehaviour:
@@ -3804,14 +3808,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 615c61bde85c3b541a6e835e119c873b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4195,7 +4199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 268, y: 0}
+  m_AnchoredPosition: {x: 268, y: 50}
   m_SizeDelta: {x: 79.058105, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934857828
@@ -4450,6 +4454,8 @@ MonoBehaviour:
   typeQuickEvent: 0
   videos: {fileID: 1056072950}
   panelQuicktime: {fileID: 788118369}
+  whenTrue: {fileID: 0}
+  animator: {fileID: 0}
   key1: 113
   success: 1
   fail: 2
@@ -4489,7 +4495,7 @@ MonoBehaviour:
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1056072947}
   choice1: {fileID: 391426823}
-  choice2: {fileID: 592914348}
+  choice2: {fileID: 391426823}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 1552439105}
   imageValue1: {fileID: 1406730455}
@@ -7885,7 +7891,7 @@ RectTransform:
   m_GameObject: {fileID: 1777055914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 81124630}
@@ -8462,6 +8468,8 @@ MonoBehaviour:
   typeQuickEvent: 3
   videos: {fileID: 1828389144}
   panelQuicktime: {fileID: 2064791075}
+  whenTrue: {fileID: 0}
+  animator: {fileID: 0}
   key1: 101
   success: 2
   fail: 1
@@ -8956,7 +8964,7 @@ RectTransform:
   m_GameObject: {fileID: 1946643724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 81124630}
@@ -9399,7 +9407,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 40aada4eb92d7aa4fbaac9f57bab9c08, type: 3}
   videoCheckpoint: {fileID: 2130868840}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 1828389142}
+  loopWhileChoose: {fileID: 1056072947}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
