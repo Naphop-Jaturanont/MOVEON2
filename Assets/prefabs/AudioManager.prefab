@@ -179,6 +179,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 966d56076a29ce24e98621e3f4b2650d, type: 3}
   - name: Theme
     clip: {fileID: 8300000, guid: aa22dabac917a2b42a0f7cda734276d6, type: 3}
+  - name: IngameChapter0
+    clip: {fileID: 8300000, guid: dc4fa5bd24431834d918b8f42f73a910, type: 3}
   sfxSounds:
   - name: Walk
     clip: {fileID: 8300000, guid: d561790233dc7b041b37020d52db1f8d, type: 3}
