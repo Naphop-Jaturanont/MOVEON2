@@ -7,6 +7,7 @@ public class TrigerToNext : MonoBehaviour
 {
     public GameObject vdoWantPlay;
     public GameObject inGame;
+    public movement Movement;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +15,7 @@ public class TrigerToNext : MonoBehaviour
         {
             inGame.SetActive(false);
             vdoWantPlay.SetActive(true);
+            Movement.OnApplicationFocus(false);
         }
     }
     /*public levelPass level;

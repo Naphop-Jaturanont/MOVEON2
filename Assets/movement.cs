@@ -38,6 +38,7 @@ public class movement : MonoBehaviour
 
     private void Start()
     {
+        OnApplicationFocus(true);
         controller = gameObject.AddComponent<CharacterController>();
         rb = gameObject.AddComponent<Rigidbody>();
         animator = gameObject.GetComponent<Animator>();
