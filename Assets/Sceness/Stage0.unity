@@ -887,7 +887,9 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 145949323}
   videoClip:
-  - {fileID: 32900000, guid: a1ffc37a29bbc4c4b9fa74c8afc06c02, type: 3}
+  - {fileID: 32900000, guid: 5b419ca2168921c4683f353f4642f6ff, type: 3}
+  - {fileID: 32900000, guid: 6267362d2710add40ad48698f03ca65f, type: 3}
+  - {fileID: 32900000, guid: 4723f0137f6189b48a097ec98d07509d, type: 3}
   videoCheckpoint: {fileID: 145949321}
   inGame: {fileID: 1257535807}
   loopWhileChoose: {fileID: 1979861581}
@@ -3573,7 +3575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3656,7 +3658,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
-  - {fileID: 32900000, guid: 4297969dfe4b88f4f812132e04889baf, type: 3}
+  - {fileID: 32900000, guid: 23416798882e3ea4fbe364dbcc392104, type: 3}
   videoCheckpoint: {fileID: 1812684683}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 787940250}

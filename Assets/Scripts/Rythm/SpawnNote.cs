@@ -12,9 +12,7 @@ public class SpawnNote : MonoBehaviour
     void Start()
     {
         for(int i = 0; i < spawnPoint.Length; i++)
-        {            
-            
-
+        {
             if(i == spawnPoint.Length-1)
             {
                 Debug.Log("Final");
@@ -23,7 +21,7 @@ public class SpawnNote : MonoBehaviour
             }
             else
             {                
-                if (i == indexWantChange)
+                if (i == indexWantChange && indexWantChange > 0)
                 {
                     noteObject = Instantiate(prefab, spawnPoint[i]).GetComponent<NoteObject>();
                     noteObject.change = true;

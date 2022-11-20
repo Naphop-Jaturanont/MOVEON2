@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TrigerToNext : MonoBehaviour
-{
+{    
     public GameObject vdoWantPlay;
     public GameObject inGame;
     public movement Movement;
