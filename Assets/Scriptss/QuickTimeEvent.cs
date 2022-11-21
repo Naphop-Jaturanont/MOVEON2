@@ -75,10 +75,12 @@ public class QuickTimeEvent : MonoBehaviour
         if (Input.GetKeyDown(key1) && videos.timer == true)
         {
             videos.chooseChoice(success);
+            Debug.Log("success");
         }
-        else if (!Input.GetKeyDown(key1) || videos.timer == false)
+        else if (Input.GetKeyDown(key1) || videos.timer == false)
         {
             videos.chooseChoice(fail);
+            Debug.Log("fail");
         }
     }
 

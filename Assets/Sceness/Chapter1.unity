@@ -3200,7 +3200,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
   videoCheckpoint: {fileID: 725706428}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 1479537187}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -4975,7 +4975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1257535808
 Transform:
   m_ObjectHideFlags: 0
@@ -5661,7 +5661,7 @@ MonoBehaviour:
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 0}
   choice1: {fileID: 1613112809}
-  choice2: {fileID: 0}
+  choice2: {fileID: 1057954749}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   imageValue: {fileID: 1474581197}
   imageValue1: {fileID: 1557589980}
@@ -5719,7 +5719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeQuickEvent: 4
-  videos: {fileID: 0}
+  videos: {fileID: 1479537190}
   panelQuicktime: {fileID: 1838820499}
   whenTrue: {fileID: 0}
   animator: {fileID: 0}
@@ -5823,7 +5823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1528558449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5854,7 +5854,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
   videoCheckpoint: {fileID: 1528558449}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 1479537187}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -7342,7 +7342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
