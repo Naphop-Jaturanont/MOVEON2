@@ -72,16 +72,26 @@ public class QuickTimeEvent : MonoBehaviour
 
     public void checkQuickPress()
     {
-        if (Input.GetKeyDown(key1) && videos.timer == true)
+        if (Input.anyKeyDown)
         {
-            videos.chooseChoice(success);
-            Debug.Log("success");
-        }
-        else if (Input.GetKeyDown(key1) || videos.timer == false)
+            if (Input.GetKeyDown(key1) && videos.timer == true)
+            {
+                videos.chooseChoice(success);
+                Debug.Log("success");
+                return;
+            }
+            else if (Input.anyKeyDown)
+            {
+                videos.chooseChoice(fail);
+                Debug.Log("fail");
+            }
+        }else if( videos.timer == false)
         {
             videos.chooseChoice(fail);
             Debug.Log("fail");
         }
+
+        
     }
 
     public void checkPress()
