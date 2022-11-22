@@ -535,11 +535,11 @@ RectTransform:
   m_Father: {fileID: 1127258382}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 65, y: -108}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128486024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -46.331543, z: -1603.7827, w: -91.633484}
+  m_margin: {x: -1148.6466, y: -150.41725, z: -1144.6959, w: -144.16937}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 5b35074b458b779458da943d56d9ecdd, type: 3}
   - {fileID: 32900000, guid: d7033a23b9ef0024398a9ccab8ee8284, type: 3}
-  - {fileID: 32900000, guid: 4723f0137f6189b48a097ec98d07509d, type: 3}
+  - {fileID: 32900000, guid: 52376f2701154b84195452e3383e750b, type: 3}
   videoCheckpoint: {fileID: 145949321}
   inGame: {fileID: 1257535807}
   loopWhileChoose: {fileID: 1979861581}
@@ -3977,25 +3977,25 @@ MonoBehaviour:
   type: 2
   videoPlayer: {fileID: 1979861585}
   videoClip:
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
-  - {fileID: 32900000, guid: 5bb6b4f2addfa4b419a3284aa60ab355, type: 3}
-  - {fileID: 32900000, guid: 9815722b42c98334ca9b78da6a7a81e8, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
   videoCheckpoint: {fileID: 1979861583}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1479537187}
