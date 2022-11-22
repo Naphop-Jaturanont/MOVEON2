@@ -3575,7 +3575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3928,7 +3928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1979861582
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3981,20 +3981,20 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
   - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
   - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
+  - {fileID: 32900000, guid: 8898ef5f13d6e16428a30e05cc04c493, type: 3}
   - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
   - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
   - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: c1e2d202d802b7842a815a28656455be, type: 3}
   - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
-  - {fileID: 32900000, guid: 4836a79e85e790b479433ed69bc1a9d5, type: 3}
+  - {fileID: 32900000, guid: c1e2d202d802b7842a815a28656455be, type: 3}
   - {fileID: 32900000, guid: ae21ad249c6c3bb47ba18f746fbac4a7, type: 3}
   videoCheckpoint: {fileID: 1979861583}
   inGame: {fileID: 0}

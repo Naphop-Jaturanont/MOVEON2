@@ -132,6 +132,11 @@ public class TestVideos : MonoBehaviour
                 }
                 break;
             case typePlay.playOneFrame:
+                if (videoPlayer.isPaused == true && !Input.anyKeyDown)
+                {
+                    videoPlayer.clip = videoClip[i];
+                    videoPlayer.Play();
+                }
                 if (Input.GetKeyDown(quickTime.key1) && dialog.maxLine == true)
                 {
                     if (i < videoClip.Length - 1)
