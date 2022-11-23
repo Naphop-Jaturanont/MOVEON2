@@ -15,7 +15,7 @@ public class movement : MonoBehaviour
     [HideInInspector] public Animator animator;
     private Vector3 playerVelocity;
     [SerializeField] private bool groundedPlayer;
-    [SerializeField] private float playerSpeed = 2.5f;
+    [SerializeField] private float playerSpeed;
     [SerializeField] private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
