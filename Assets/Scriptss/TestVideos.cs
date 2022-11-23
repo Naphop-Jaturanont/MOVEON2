@@ -50,6 +50,9 @@ public class TestVideos : MonoBehaviour
     [Space(10)]
     [Header("oneFrame")]
     [Tooltip("if you want play final Video before ingame")]
+    public Image fadeImage = null;
+    float colorAlpha = 0;
+    public Color myColor;
     public bool finalVdoBeforeInGame = false;
     public bool finalVdo = false;
 
@@ -89,8 +92,28 @@ public class TestVideos : MonoBehaviour
                         {
                             if(finalVdoBeforeInGame == true)
                             {
-                                inGame.SetActive(true);
-                                gameObject.SetActive(false);
+                                
+                                if(fadeImage != null)
+                                {
+                                    myColor.a = 0;
+                                    if (colorAlpha < 255)
+                                    {
+                                        colorAlpha += 255  * Time.deltaTime;
+                                    }
+                                    Color32 color = new Color32(0,0,0,(byte)colorAlpha);
+                                    fadeImage.color = color;
+                                    if(colorAlpha >= 255)
+                                    {
+                                        inGame.SetActive(true);
+                                        gameObject.SetActive(false);
+                                        return;
+                                    }
+                                }
+                                else
+                                {
+                                    inGame.SetActive(true);
+                                    gameObject.SetActive(false);
+                                }
                                 return;
                             }else if(finalVdo == true)
                             {
@@ -107,7 +130,7 @@ public class TestVideos : MonoBehaviour
                         }
                     }
                     videoPlayer.clip = videoClip[i];
-                    videoPlayer.Play();
+                    videoPlayer.Play();                    
                 }
                 break;
             case typePlay.loop:

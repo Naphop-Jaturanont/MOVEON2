@@ -12,7 +12,7 @@ public class Checkpoint : MonoBehaviour
     public int PassVideoWantCheck { get { return passVideoWantCheck; } set { passVideoWantCheck = value; } }
     private void Update()
     {
-        Debug.Log(passVideoWantCheck);
+        //Debug.Log(passVideoWantCheck);
     }
     public void returnToCheckpoint(string nameEspisode)
     {
