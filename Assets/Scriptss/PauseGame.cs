@@ -30,7 +30,6 @@ public class PauseGame : MonoBehaviour
             if (isPause)
             {
                 Resume();
-
             }
             else
             {
@@ -56,6 +55,7 @@ public class PauseGame : MonoBehaviour
 
     public void Resume()
     {
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         if (vidoplayer != null)
@@ -64,7 +64,7 @@ public class PauseGame : MonoBehaviour
         }
         pausePanel.SetActive(false);
         Time.timeScale = 1;
-        isPause = false;
+        
 
         if (settingUI.activeSelf == true)
         {
@@ -83,5 +83,7 @@ public class PauseGame : MonoBehaviour
             pauseMenu.SetActive(true);
             exitToMain.SetActive(false);
         }
+
+        isPause = false;
     }
 }

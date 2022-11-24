@@ -20,8 +20,10 @@ public class QuickTimeEvent : MonoBehaviour
     public TestVideos videos;
     public GameObject panelQuicktime;
     private Image imagePanelQ;//add animation
+    private Image imagePanelQ2;//add animation
     public Sprite whenTrue = null;//add animation
     public Animator animator = null;//add animation
+    public bool checkChoose = false;
 
     [Space(10)]
     [Header("Important")]
@@ -38,7 +40,7 @@ public class QuickTimeEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        imagePanelQ = panelQuicktime.GetComponent<Image>();//add animation
+        
     }
 
     // Update is called once per frame
@@ -104,7 +106,11 @@ public class QuickTimeEvent : MonoBehaviour
             }
             if (whenTrue)
             {
+                imagePanelQ = panelQuicktime.transform.GetChild(0).GetChild(0).GetComponent<Image>();//add animation
                 imagePanelQ.sprite = whenTrue;//add animation
+                imagePanelQ.gameObject.SetActive(true);//add animation
+                GameObject buttonOBJ = panelQuicktime.transform.GetChild(1).gameObject;
+                buttonOBJ.SetActive(false);
             }
             Invoke("closeDelay", 1.5f);//add animation
             videos.chooseChoice(1);
@@ -117,7 +123,11 @@ public class QuickTimeEvent : MonoBehaviour
             }
             if (whenTrue)
             {
-                imagePanelQ.sprite = whenTrue;//add animation
+                imagePanelQ2 = panelQuicktime.transform.GetChild(1).GetChild(0).GetComponent<Image>();//add animation
+                imagePanelQ2.sprite = whenTrue;//add animation
+                imagePanelQ2.gameObject.SetActive(true);//add animation
+                GameObject buttonOBJ = panelQuicktime.transform.GetChild(0).gameObject;
+                buttonOBJ.SetActive(false);
             }
             Invoke("closeDelay", 1.5f);//add animation
             videos.chooseChoice(2);
