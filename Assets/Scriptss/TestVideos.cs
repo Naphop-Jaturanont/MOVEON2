@@ -26,6 +26,7 @@ public class TestVideos : MonoBehaviour
     public GameObject choice1 = null;
     public GameObject choice2 = null;
     public stage1 Stage1;
+    public PauseGame pauseGame;
 
     [Space(10)]
     [Header("Timer")]
@@ -76,6 +77,11 @@ public class TestVideos : MonoBehaviour
     }
     private void Update()
     {
+        if(pauseGame == null)
+        {
+            pauseGame = GameObject.Find("CanvasPause").GetComponent<PauseGame>();
+            pauseGame.vidoplayer = gameObject.GetComponent<TestVideos>();
+        }
         switch (type)
         {
             case typePlay.playOnce:

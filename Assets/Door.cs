@@ -23,7 +23,7 @@ public class Door : MonoBehaviour, IInteractable
         {
             Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
             character = GameObject.Find("MainCharacter1").GetComponent<CharacterController>();
-            Movement.OnApplicationFocus(false);
+            //Movement.OnApplicationFocus(false);
             character.enabled = false;
             Movement.enabled = false;
             Movement.rb.useGravity = false;
@@ -36,7 +36,7 @@ public class Door : MonoBehaviour, IInteractable
         {
             Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
             character = GameObject.Find("MainCharacter1").GetComponent<CharacterController>();
-            Movement.OnApplicationFocus(true);
+            //Movement.OnApplicationFocus(true);
             character.enabled = true;
             Movement.enabled = true;
             Movement.rb.useGravity = true;
