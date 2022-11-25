@@ -47,6 +47,9 @@ public class movement : MonoBehaviour
     public viewpoint Viewpoint;
     private Quaternion lookLeft;
     private Quaternion lookRight;
+    private AudioManager audioManager;
+    float delaytime = 0.1f;
+    
 
     //
     private void Start()
@@ -57,6 +60,7 @@ public class movement : MonoBehaviour
         Climb = gameObject.GetComponent<climb>();
         lookRight = transform.rotation;
         lookLeft = lookRight * Quaternion.Euler(0, 180, 0);
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -165,6 +169,12 @@ public class movement : MonoBehaviour
         {
             if (move != Vector3.zero)
             {
+                if(delaytime >= 0.1f)
+                {
+                    audioManager.PlaySFX("Walk");
+                    delaytime = 0f;
+                }
+                
                 Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
 
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 360 * Time.deltaTime);
@@ -178,6 +188,10 @@ public class movement : MonoBehaviour
             {
                 stateCharacter("Idle");
             }
+        }
+        if(delaytime < 0.1f)
+        {
+            delaytime += 0.1f * Time.deltaTime;
         }
     }
 

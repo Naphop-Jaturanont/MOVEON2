@@ -10,8 +10,14 @@ public class AudioController : MonoBehaviour
 
     public void Start()
     {
-        _musicSlider.value = PlayerPrefs.GetFloat("save music", musicValue);
-        _sfxSlider.value = PlayerPrefs.GetFloat("save sfx", sfxValue);
+        PlayerPrefs.SetFloat("save music",1f);
+        PlayerPrefs.SetFloat("save sfx",1f);
+        
+    }
+    private void Update()
+    {
+        _musicSlider.value = PlayerPrefs.GetFloat("save music");
+        _sfxSlider.value = PlayerPrefs.GetFloat("save sfx");
     }
     public void MusicVolume()
     {
@@ -26,12 +32,12 @@ public class AudioController : MonoBehaviour
     }
     public void ChangeMusicSlider(float value)
     {
-        musicValue = value;
-        PlayerPrefs.SetFloat("save music", musicValue);
+        //musicValue = value;
+        PlayerPrefs.SetFloat("save music", value);
     }
     public void ChangeSfxSlider(float value)
     {
-        sfxValue = value;
-        PlayerPrefs.SetFloat("save sfx", sfxValue);
+        //sfxValue = value;
+        PlayerPrefs.SetFloat("save sfx", value);
     }
 }

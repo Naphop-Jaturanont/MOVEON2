@@ -12,7 +12,7 @@ public class PauseGame : MonoBehaviour
     public GameObject exitToDesktop;
 
     public TestVideos vidoplayer;
-    public GameObject canvas;
+    //public GameObject canvas;
 
     public bool isPause;
     public movement Movement;
@@ -55,7 +55,6 @@ public class PauseGame : MonoBehaviour
 
     public void Resume()
     {
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         if (vidoplayer != null)

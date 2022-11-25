@@ -25,7 +25,7 @@ public class TrigerToNext : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(animaCamera.transform.position.sqrMagnitude - Camera.transform.position.sqrMagnitude);
+        //Debug.Log(animaCamera.transform.position.sqrMagnitude - Camera.transform.position.sqrMagnitude);
         if (animaCamera.transform.position.sqrMagnitude - Camera.transform.position.sqrMagnitude > -1
             && check == false && animaCamera.activeSelf == true)
         {

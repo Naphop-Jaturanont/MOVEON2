@@ -54,8 +54,10 @@ public class TestVideos : MonoBehaviour
     public Image fadeImage = null;
     float colorAlpha = 0;
     public Color myColor;
+    private bool colorBoolAlpha = false;
     public bool finalVdoBeforeInGame = false;
     public bool finalVdo = false;
+    private bool isPause;
 
     //public VideoClip videoClipchose1;
     //public VideoClip videoClipchose2;
@@ -67,6 +69,7 @@ public class TestVideos : MonoBehaviour
         checkpoint = GameObject.Find("checkpointmanager").GetComponent<Checkpoint>();
         quickTime = GetComponent<QuickTimeEvent>();
         dialog = gameObject.transform.GetComponentInChildren<DialogOnVDO>();
+        videoPlayer.loopPointReached += changeVdo;
     }
     private void Start()
     {
@@ -75,13 +78,101 @@ public class TestVideos : MonoBehaviour
         videoPlayer.Play();
         maxTime = time;
     }
+
     private void Update()
     {
+        if(colorBoolAlpha == true)
+        {
+            if (finalVdoBeforeInGame == true || finalVdo == true )
+            {
+
+                if (fadeImage != null)
+                {
+                    myColor.a = 0;
+                    if (colorAlpha < 255)
+                    {
+                        colorAlpha += 255 * Time.deltaTime;
+                    }
+                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    fadeImage.color = color;
+                    if (colorAlpha >= 255)
+                    {
+                        inGame.SetActive(true);
+                        gameObject.SetActive(false);
+                        return;
+                    }
+                }
+                else
+                {
+                    inGame.SetActive(true);
+                    gameObject.SetActive(false);
+                }
+                return;
+            }
+            else if (finalVdo == true)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+                checkpoint.PassVideoWantCheck++;
+                loopWhileChoose.SetActive(true);
+                return;
+            }
+        }
+
+        
+        if(type == typePlay.playOneFrame)
+        {
+            if (videoPlayer.isPaused == true && !Input.anyKeyDown)
+            {
+                videoPlayer.clip = videoClip[i];
+                videoPlayer.Play();
+            }
+            if (Input.GetKeyDown(quickTime.key1) && dialog.maxLine == true)
+            {
+                if (i < videoClip.Length - 1)
+                {
+                    i++;
+                    videoCheckpoint.indexVideo = i;
+                }
+                else if (i >= videoClip.Length - 1)
+                {
+                    gameObject.SetActive(false);
+                    checkpoint.PassVideoWantCheck++;
+                    loopWhileChoose.SetActive(true);
+                    return;
+                }
+
+                videoPlayer.clip = videoClip[i];
+                videoPlayer.Play();
+
+            }
+        }
         if(pauseGame == null)
         {
             pauseGame = GameObject.Find("CanvasPause").GetComponent<PauseGame>();
             pauseGame.vidoplayer = gameObject.GetComponent<TestVideos>();
         }
+        
+
+        if (timer == true)
+        {
+            imageValue.fillAmount = time / maxTime;
+            if(imageValue1)
+            {
+                imageValue1.fillAmount = time / maxTime;
+            }            
+            time -= timeWhenChoose * Time.deltaTime;            
+            if(time <= 0)
+            {
+                timer = false;
+            }
+        }
+    }
+    public void changeVdo(VideoPlayer vp)
+    {
         switch (type)
         {
             case typePlay.playOnce:
@@ -96,47 +187,13 @@ public class TestVideos : MonoBehaviour
                         }
                         else if (i >= videoClip.Length - 1)
                         {
-                            if(finalVdoBeforeInGame == true)
-                            {
-                                
-                                if(fadeImage != null)
-                                {
-                                    myColor.a = 0;
-                                    if (colorAlpha < 255)
-                                    {
-                                        colorAlpha += 255  * Time.deltaTime;
-                                    }
-                                    Color32 color = new Color32(0,0,0,(byte)colorAlpha);
-                                    fadeImage.color = color;
-                                    if(colorAlpha >= 255)
-                                    {
-                                        inGame.SetActive(true);
-                                        gameObject.SetActive(false);
-                                        return;
-                                    }
-                                }
-                                else
-                                {
-                                    inGame.SetActive(true);
-                                    gameObject.SetActive(false);
-                                }
-                                return;
-                            }else if(finalVdo == true)
-                            {
-                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                            }
-                            else
-                            {
-                                gameObject.SetActive(false);
-                                checkpoint.PassVideoWantCheck++;
-                                loopWhileChoose.SetActive(true);
-                                return;
-                            }
-                            
+                            colorBoolAlpha = true;
+                            return;
+
                         }
                     }
                     videoPlayer.clip = videoClip[i];
-                    videoPlayer.Play();                    
+                    videoPlayer.Play();
                 }
                 break;
             case typePlay.loop:
@@ -161,47 +218,10 @@ public class TestVideos : MonoBehaviour
                 }
                 break;
             case typePlay.playOneFrame:
-                if (videoPlayer.isPaused == true && !Input.anyKeyDown)
-                {
-                    videoPlayer.clip = videoClip[i];
-                    videoPlayer.Play();
-                }
-                if (Input.GetKeyDown(quickTime.key1) && dialog.maxLine == true)
-                {
-                    if (i < videoClip.Length - 1)
-                    {
-                        i++;
-                        videoCheckpoint.indexVideo = i;
-                    }
-                    else if (i >= videoClip.Length - 1)
-                    {
-                        gameObject.SetActive(false);
-                        checkpoint.PassVideoWantCheck++;
-                        loopWhileChoose.SetActive(true);
-                        return;
-                    }
-
-                    videoPlayer.clip = videoClip[i];
-                    videoPlayer.Play();
-
-                }
+                               
                 break;
         }
-        
 
-        if (timer == true)
-        {
-            imageValue.fillAmount = time / maxTime;
-            if(imageValue1)
-            {
-                imageValue1.fillAmount = time / maxTime;
-            }            
-            time -= timeWhenChoose * Time.deltaTime;            
-            if(time <= 0)
-            {
-                timer = false;
-            }
-        }
     }
 
     public void chooseChoice(int index)

@@ -45,6 +45,24 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayMusicForBtn(string name)
+    {
+        Sound sound = Array.Find(musicSound, x => x.name == name);
+
+        if (sound == null)
+        {
+            Debug.Log("Sound Not Found");
+        }
+        else
+        {
+            musicSource = GameObject.Find("MusicSource").GetComponent<AudioSource>();
+            musicSource.clip = null;
+            musicSource.clip = sound.clip;
+            musicSource.Play();
+
+        }
+    }
+
     public void PlaySFX(string name)
     {
         Sound sound = Array.Find(sfxSounds, x => x.name == name);
@@ -66,6 +84,11 @@ public class AudioManager : MonoBehaviour
     public void stopsfxsource()
     {
         sfxSource.Stop();
+    }
+    public void stopbgmsource()
+    {
+        musicSource = GameObject.Find("MusicSource").GetComponent<AudioSource>();
+        musicSource.Stop();
     }
     public void MusicVolume(float volume)
     {
