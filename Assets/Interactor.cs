@@ -27,7 +27,11 @@ using UnityEngine;
     {
         _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders,
                                    _interactableMask);
-        Interact();        
+        if (_numFound > 0)
+        {
+            Interact();
+        }
+                
     }
     private void Interact()
     {
