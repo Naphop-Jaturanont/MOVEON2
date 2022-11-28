@@ -13,6 +13,7 @@ public class keep : MonoBehaviour
     public Image image;
     float colorAlpha = 0;
     public GameObject ingame;
+    public GameObject vdo;
     private void Update()
     {
         if (colorAlpha < 255 && finishline == true)
