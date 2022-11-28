@@ -83,7 +83,7 @@ public class TestVideos : MonoBehaviour
     {
         if(colorBoolAlpha == true)
         {
-            if (finalVdoBeforeInGame == true || finalVdo == true )
+            if (finalVdoBeforeInGame == true )
             {
 
                 if (fadeImage != null)
@@ -111,7 +111,22 @@ public class TestVideos : MonoBehaviour
             }
             else if (finalVdo == true)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                if (fadeImage != null)
+                {
+                    myColor.a = 0;
+                    if (colorAlpha < 255)
+                    {
+                        colorAlpha += 255 * Time.deltaTime;
+                    }
+                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    fadeImage.color = color;
+                    if (colorAlpha >= 255)
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                        return;
+                    }
+                }
+                
             }
             else
             {
@@ -130,7 +145,7 @@ public class TestVideos : MonoBehaviour
                 videoPlayer.clip = videoClip[i];
                 videoPlayer.Play();
             }
-            if (Input.GetKeyDown(quickTime.key1) && dialog.maxLine == true)
+            if (Input.anyKeyDown && dialog.maxLine == true)
             {
                 if (i < videoClip.Length - 1)
                 {

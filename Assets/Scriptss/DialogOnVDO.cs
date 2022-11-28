@@ -29,7 +29,7 @@ public class DialogOnVDO : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetKeyDown(quickTime.key1))
+        if (Input.anyKeyDown)
         {
             if(textMeshPro.text == lines[index])
             {

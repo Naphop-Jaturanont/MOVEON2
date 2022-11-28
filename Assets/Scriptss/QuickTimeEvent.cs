@@ -20,7 +20,7 @@ public class QuickTimeEvent : MonoBehaviour
     public TestVideos videos;
     public GameObject panelQuicktime;
     private Image imagePanelQ;//add animation
-    private Image imagePanelQ2;//add animation
+    public Image imagePanelQ2 = null;//add animation
     public Sprite whenTrue = null;//add animation
     public Animator animator = null;//add animation
     public bool checkChoose = false;
@@ -37,6 +37,8 @@ public class QuickTimeEvent : MonoBehaviour
     public KeyCode key2 = KeyCode.None;
     public Image fillImage = null;
     public DraggableUI draggableUI = null;
+
+    float colorAlpha = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,34 +102,60 @@ public class QuickTimeEvent : MonoBehaviour
     {
         if (Input.GetKeyDown(key1))
         {
-            if(animator != null)
-            {
-                animator.SetTrigger("success");//add animation
-            }
-            if (whenTrue)
-            {
-                imagePanelQ = panelQuicktime.transform.GetChild(0).GetChild(0).GetComponent<Image>();//add animation
-                imagePanelQ.sprite = whenTrue;//add animation
-                imagePanelQ.gameObject.SetActive(true);//add animation
-                GameObject buttonOBJ = panelQuicktime.transform.GetChild(1).gameObject;
-                buttonOBJ.SetActive(false);
-            }
-            Invoke("closeDelay", 1.5f);//add animation
-            videos.chooseChoice(1);
-        }
-        if (Input.GetKeyDown(key2))
-        {
+            animator = panelQuicktime.transform.GetChild(0).GetComponent<Animator>();
             if (animator != null)
             {
                 animator.SetTrigger("success");//add animation
             }
             if (whenTrue)
             {
-                imagePanelQ2 = panelQuicktime.transform.GetChild(1).GetChild(0).GetComponent<Image>();//add animation
+                if(imagePanelQ2 != null)
+                {
+                    imagePanelQ2.gameObject.SetActive(false);
+                }                
+                imagePanelQ = panelQuicktime.transform.GetChild(0).GetComponent<Image>();//add animation
+                imagePanelQ.sprite = whenTrue;//add animation
+                
+                if (colorAlpha < 255)
+                {
+                    colorAlpha += 255 * Time.deltaTime;
+                }
+                Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                imagePanelQ.color = color;
+                if (colorAlpha >= 255)
+                {
+                    imagePanelQ.gameObject.SetActive(false);//add animation
+                }
+                
+            }
+            Invoke("closeDelay", 1.5f);//add animation
+            videos.chooseChoice(1);
+        }
+        if (Input.GetKeyDown(key2))
+        {
+            animator = panelQuicktime.transform.GetChild(0).GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.SetTrigger("success");//add animation
+            }
+            if (whenTrue)
+            {
+                imagePanelQ = panelQuicktime.transform.GetChild(0).GetComponent<Image>();//add animation
+                imagePanelQ.gameObject.SetActive(false);
+                imagePanelQ2 = panelQuicktime.transform.GetChild(1).GetComponent<Image>();//add animation
                 imagePanelQ2.sprite = whenTrue;//add animation
                 imagePanelQ2.gameObject.SetActive(true);//add animation
-                GameObject buttonOBJ = panelQuicktime.transform.GetChild(0).gameObject;
-                buttonOBJ.SetActive(false);
+                if (colorAlpha < 255)
+                {
+                    colorAlpha += 255 * Time.deltaTime;
+                }
+                Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                imagePanelQ.color = color;
+                if (colorAlpha >= 255)
+                {
+                    imagePanelQ2.gameObject.SetActive(false);
+                }
+                
             }
             Invoke("closeDelay", 1.5f);//add animation
             videos.chooseChoice(2);
@@ -189,6 +217,7 @@ public class QuickTimeEvent : MonoBehaviour
 
     public void closeDelay()
     {
+        
         panelQuicktime.SetActive(false);        
     }
 }
