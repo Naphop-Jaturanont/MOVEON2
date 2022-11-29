@@ -7,11 +7,24 @@ public class spawnTaovun : MonoBehaviour
     public GameObject prefabTaovun;
     public Transform[] spawnPoint;
 
+    private KeepTaovun keepTaovun;
     private void Start()
     {
         for (int i = 0; i < spawnPoint.Length; i++)
         {
             Instantiate(prefabTaovun, spawnPoint[i].position, Quaternion.identity);
+            /*keepTaovun = prefabTaovun.GetComponent<KeepTaovun>();
+            keepTaovun.panelFinish = GameObject.Find("PanelFinish");
+            keepTaovun.panelKeepTaovun = GameObject.Find("PanelkeepTaovun");
+            keepTaovun.panelEnough = GameObject.Find("PanelkeepEnough");*/
+        }
+    }
+
+    public void clearObject()
+    {
+        for (int i = 0; i < spawnPoint.Length; i++)
+        {
+            Destroy(spawnPoint[i].gameObject);
         }
     }
 }
