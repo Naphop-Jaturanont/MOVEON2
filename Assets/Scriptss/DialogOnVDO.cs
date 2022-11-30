@@ -23,7 +23,7 @@ public class DialogOnVDO : MonoBehaviour
         textMeshPro.text = string.Empty;
         quickTime = gameObject.GetComponentInParent<QuickTimeEvent>();
         startDialogue();
-    }
+    }   
     public void startDialogue()
     {
         index = 0;

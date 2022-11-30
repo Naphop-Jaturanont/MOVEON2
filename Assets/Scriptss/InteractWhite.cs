@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InteractWhite : MonoBehaviour, IInteractable
+public class InteractWhite : MonoBehaviour
 {
     public GameObject inGame;
     public GameObject vdo;
@@ -13,15 +13,6 @@ public class InteractWhite : MonoBehaviour, IInteractable
     public Image image;
 
     float colorAlpha = 0;
-    public interactsomething interactsomething => throw new System.NotImplementedException();
-
-    public string InteractionPrompt => throw new System.NotImplementedException();
-
-    public bool Interact(Interactor interactor)
-    {
-        interact = true;
-        return true;
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -50,4 +41,13 @@ public class InteractWhite : MonoBehaviour, IInteractable
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            interact = true;
+        }
+    }
+
 }

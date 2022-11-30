@@ -9,9 +9,19 @@ public class StartManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        unityEvent.Invoke(); 
+        //unityEvent.Invoke(); 
     }
 
+    private void Awake()
+    {
+        unityEvent.Invoke();
+        Debug.Log("sdddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+    }
+    private void OnValidate()
+    {
+        //unityEvent.Invoke();
+        //Debug.Log("sdddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+    }
     // Update is called once per frame
     void Update()
     {

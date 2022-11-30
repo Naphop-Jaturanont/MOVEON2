@@ -1867,18 +1867,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1127258383}
-        m_TargetAssemblyTypeName: DialogOnVDO, Assembly-CSharp
-        m_MethodName: startDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &378408784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2714,7 +2702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &534738918
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3305,7 +3293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &870857350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4652,7 +4640,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1479537191}
   videoClip:
-  - {fileID: 32900000, guid: a58e0feb608cede4b8bf3c26241e0333, type: 3}
+  - {fileID: 32900000, guid: 7ef2dc84ba68a7540bc069be033162f1, type: 3}
   videoCheckpoint: {fileID: 1479537189}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 0}
@@ -4763,7 +4751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1485061171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5703,7 +5691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6145,7 +6133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1979861582
 RectTransform:
   m_ObjectHideFlags: 0

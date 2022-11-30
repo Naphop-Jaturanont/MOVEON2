@@ -14,7 +14,7 @@ public class keep : MonoBehaviour
     float colorAlpha = 0;
     public GameObject ingame;
     public GameObject vdo;
-    private spawnTaovun spawn;
+    public spawnTaovun spawn;
 
     private void Start()
     {
@@ -31,6 +31,7 @@ public class keep : MonoBehaviour
         else if (colorAlpha >= 255)
         {
             //spawn.clearObject();
+            spawn.clearObject();
             vdo.gameObject.SetActive(true);
             ingame.SetActive(false);
         }

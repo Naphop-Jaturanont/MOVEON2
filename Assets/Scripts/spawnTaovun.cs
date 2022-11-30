@@ -22,9 +22,10 @@ public class spawnTaovun : MonoBehaviour
 
     public void clearObject()
     {
-        for (int i = 0; i < spawnPoint.Length; i++)
-        {
-            Destroy(spawnPoint[i].gameObject);
+        GameObject[] gameObject = GameObject.FindGameObjectsWithTag("Taovun");
+        for (int i = 0; i < gameObject.Length; i++)
+        {            
+            Destroy(gameObject[i].gameObject);
         }
     }
 }
