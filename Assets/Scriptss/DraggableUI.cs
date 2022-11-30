@@ -19,6 +19,13 @@ public class DraggableUI : MonoBehaviour, IDragHandler
 
     public bool checkPosition = false;
 
+    Vector2 positionstarter;
+
+    private void Start()
+    {
+        positionstarter = transform.position;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButton(0))
@@ -74,6 +81,12 @@ public class DraggableUI : MonoBehaviour, IDragHandler
         {
             checkPosition = false;
         }
+    }
+
+    public void ResetBool()
+    {
+        checkPosition = false;
+        gameObject.transform.position = positionstarter;
     }
 
 }

@@ -190,6 +190,12 @@ public class QuickTimeEvent : MonoBehaviour
             videos.chooseChoice(fail);
         }
     }
+    public void ResetImage()
+    {
+        fillImage.fillAmount = 0;
+        colorAlpha = 0;
+        animator.CrossFadeInFixedTime("SpacebarUICtrl", 0.1f);
+    }
 
     public void checkRhythm(string type)
     {

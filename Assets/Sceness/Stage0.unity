@@ -1204,6 +1204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 0
   videoPlayer: {fileID: 145949323}
   videoClip:
@@ -1225,7 +1228,9 @@ MonoBehaviour:
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
@@ -1632,6 +1637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 0
   videoPlayer: {fileID: 289729407}
   videoClip:
@@ -1651,7 +1659,9 @@ MonoBehaviour:
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 289729408}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
@@ -1726,6 +1736,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289729403}
   m_CullTransparentMesh: 1
+--- !u!1 &295501695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295501696}
+  - component: {fileID: 295501697}
+  m_Layer: 0
+  m_Name: startGamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &295501696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295501695}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.539831, y: -2.9324412, z: 15.95613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &295501697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295501695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6984e5d3672035846b78288fc6f2039b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1812684684}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 787940252}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 145949322}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1127258383}
+        m_TargetAssemblyTypeName: DialogOnVDO, Assembly-CSharp
+        m_MethodName: ResetDialog
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1479537190}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 107751857}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 107751857}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1127258383}
+        m_TargetAssemblyTypeName: DialogOnVDO, Assembly-CSharp
+        m_MethodName: startDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &378408784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2953,6 +3106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 1
   videoPlayer: {fileID: 787940254}
   videoClip:
@@ -2972,7 +3128,9 @@ MonoBehaviour:
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
@@ -3747,6 +3905,7 @@ MonoBehaviour:
   textSpeed: 0.025
   index: 0
   maxLine: 0
+  check: 0
 --- !u!114 &1127258384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4487,6 +4646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 0
   videoPlayer: {fileID: 1479537191}
   videoClip:
@@ -4506,7 +4668,9 @@ MonoBehaviour:
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1479537192}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 1
   i: 0
@@ -5539,7 +5703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5620,6 +5784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
@@ -5641,7 +5808,9 @@ MonoBehaviour:
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
@@ -5768,7 +5937,7 @@ PrefabInstance:
     - target: {fileID: 6892093645160839015, guid: c9704a5da26444246b5ca87ef4e2411e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6892093645160839015, guid: c9704a5da26444246b5ca87ef4e2411e,
         type: 3}
@@ -5976,7 +6145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1979861582
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6022,6 +6191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
   type: 2
   videoPlayer: {fileID: 1979861585}
   videoClip:
@@ -6059,7 +6231,9 @@ MonoBehaviour:
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 0}
+  colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0

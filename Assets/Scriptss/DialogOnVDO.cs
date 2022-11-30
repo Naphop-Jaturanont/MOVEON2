@@ -13,6 +13,10 @@ public class DialogOnVDO : MonoBehaviour
     [HideInInspector]public int index;
     public bool maxLine;
     private QuickTimeEvent quickTime;
+
+    [SerializeField]private bool check = false;
+
+    private IEnumerator enumerator;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +24,21 @@ public class DialogOnVDO : MonoBehaviour
         quickTime = gameObject.GetComponentInParent<QuickTimeEvent>();
         startDialogue();
     }
-    void startDialogue()
+    public void startDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
     }
+    private void Update()
+    {
+        
+        
+    }
 
     // Update is called once per frame
     void LateUpdate()
-    {
+    {        
+
         if (Input.anyKeyDown)
         {
             if(textMeshPro.text == lines[index])
@@ -72,5 +82,13 @@ public class DialogOnVDO : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    public void ResetDialog()
+    {
+        maxLine = false;
+        textMeshPro.text = string.Empty;
+        index = 0;
+        check = false;
     }
 }

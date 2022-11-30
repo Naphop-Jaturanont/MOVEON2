@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public enum typePlay
 {
@@ -14,6 +15,7 @@ public enum typePlay
 
 public class TestVideos : MonoBehaviour
 {
+    public UnityEvent unityEvent = null;
     public typePlay type;
     public VideoPlayer videoPlayer;
     public VideoClip[] videoClip;
@@ -52,9 +54,9 @@ public class TestVideos : MonoBehaviour
     [Header("oneFrame")]
     [Tooltip("if you want play final Video before ingame")]
     public Image fadeImage = null;
-    float colorAlpha = 0;
+    public float colorAlpha = 0;
     public Color myColor;
-    private bool colorBoolAlpha = false;
+    [SerializeField]private bool colorBoolAlpha = false;
     public bool finalVdoBeforeInGame = false;
     public bool finalVdo = false;
     private bool isPause;
@@ -81,11 +83,11 @@ public class TestVideos : MonoBehaviour
 
     private void Update()
     {
+        
         if(colorBoolAlpha == true)
         {
             if (finalVdoBeforeInGame == true )
             {
-
                 if (fadeImage != null)
                 {
                     myColor.a = 0;
@@ -97,6 +99,10 @@ public class TestVideos : MonoBehaviour
                     fadeImage.color = color;
                     if (colorAlpha >= 255)
                     {
+                        if(unityEvent != null)
+                        {
+                            unityEvent.Invoke();
+                        }
                         inGame.SetActive(true);
                         gameObject.SetActive(false);
                         return;
@@ -282,5 +288,20 @@ public class TestVideos : MonoBehaviour
                 //else
                 break;
         }
+    }
+
+    public void ResetIndex(float timeed)
+    {
+        i = 0;
+        videoPlayer.clip = videoClip[i];
+        videoPlayer.Play();
+        time = timeed;
+        colorBoolAlpha = false;
+        colorAlpha = 0;
+        if(timeed > 0)
+        {
+            timer = true;
+        }
+        
     }
 }
