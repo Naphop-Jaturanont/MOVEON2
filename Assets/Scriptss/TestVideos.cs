@@ -151,7 +151,7 @@ public class TestVideos : MonoBehaviour
                 videoPlayer.clip = videoClip[i];
                 videoPlayer.Play();
             }
-            if (Input.anyKeyDown && dialog.maxLine == true)
+            if (Input.anyKeyDown && dialog.maxLine == true && !Input.GetKeyDown(KeyCode.Escape))
             {
                 if (i < videoClip.Length - 1)
                 {
