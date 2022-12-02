@@ -1931,7 +1931,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1982,6 +1982,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -5045,7 +5047,7 @@ RectTransform:
   - {fileID: 665294736}
   - {fileID: 1773357682}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5083,6 +5085,8 @@ MonoBehaviour:
   timer: 1
   time: 20
   timeWhenChoose: 2
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -5876,7 +5880,6 @@ RectTransform:
   - {fileID: 1812684681}
   - {fileID: 1420785890}
   - {fileID: 1486396938}
-  - {fileID: 1173886832}
   - {fileID: 787940251}
   - {fileID: 1693977545}
   - {fileID: 517504066}
@@ -6724,7 +6727,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6774,9 +6777,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 173596510}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -10404,7 +10409,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10455,9 +10460,11 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -14421,7 +14428,7 @@ RectTransform:
   m_Children:
   - {fileID: 1850891057}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14496,6 +14503,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -15545,6 +15554,8 @@ MonoBehaviour:
   timer: 1
   time: 20
   timeWhenChoose: 2
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -15608,7 +15619,7 @@ RectTransform:
   - {fileID: 1681950239}
   - {fileID: 1678854457}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17512,7 +17523,7 @@ RectTransform:
   m_Children:
   - {fileID: 1927063914}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17587,6 +17598,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -18967,7 +18980,7 @@ RectTransform:
   m_Children:
   - {fileID: 1392835991}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19055,9 +19068,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 1
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 566303056}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -19792,7 +19807,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19842,14 +19857,16 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
-  finalVdo: 0
+  finalVdo: 1
   i: 0
 --- !u!328 &602511520
 VideoPlayer:
@@ -22362,7 +22379,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22450,9 +22467,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 674752386}
+  fadeImage: {fileID: 784571877}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -23167,7 +23186,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23325,6 +23344,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 691247864}
@@ -24643,7 +24664,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24694,9 +24715,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -24959,9 +24982,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -25017,7 +25042,7 @@ RectTransform:
   m_Children:
   - {fileID: 1257899607}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26270,7 +26295,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26350,7 +26375,7 @@ RectTransform:
   - {fileID: 1904683692}
   - {fileID: 491857039}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -26388,6 +26413,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -30535,7 +30562,7 @@ RectTransform:
   m_Children:
   - {fileID: 1356633671}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30612,9 +30639,11 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 1
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -32660,7 +32689,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33450,7 +33479,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33538,9 +33567,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 1035916258}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -34770,7 +34801,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -34820,10 +34851,12 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
-  colorAlpha: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
@@ -37866,131 +37899,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1172100146}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1173886828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1173886832}
-  - component: {fileID: 1173886831}
-  - component: {fileID: 1173886830}
-  - component: {fileID: 1173886829}
-  m_Layer: 5
-  m_Name: Video1 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1173886829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173886828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1173886830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173886828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  type: 0
-  videoPlayer: {fileID: 1173886831}
-  videoClip: []
-  videoCheckpoint: {fileID: 1173886829}
-  inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 787940250}
-  choice1: {fileID: 0}
-  choice2: {fileID: 0}
-  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
-  pauseGame: {fileID: 0}
-  imageValue: {fileID: 0}
-  imageValue1: {fileID: 0}
-  timer: 0
-  time: 0
-  timeWhenChoose: 20
-  loopArray: 0
-  oneFrame: 0
-  fadeImage: {fileID: 0}
-  colorAlpha: 0
-  myColor: {r: 0, g: 0, b: 0, a: 0}
-  colorBoolAlpha: 0
-  finalVdoBeforeInGame: 0
-  finalVdo: 0
-  i: 0
---- !u!328 &1173886831
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173886828}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 0}
-  m_TargetCameraAlpha: 0.213
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 462570215}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 1
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!224 &1173886832
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173886828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145715674}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1176109676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45836,10 +45744,12 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 1
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
-  colorAlpha: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
@@ -46619,7 +46529,7 @@ RectTransform:
   m_Children:
   - {fileID: 1702192013}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46701,6 +46611,8 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 0}
@@ -48436,9 +48348,11 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 1
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -48854,6 +48768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1510146429}
+  - component: {fileID: 1510146430}
   m_Layer: 0
   m_Name: Ingamec1
   m_TagString: Untagged
@@ -48891,6 +48806,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1510146430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510146428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5398242b1e975184aa1c52ffe4cd4794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1552975828}
+  fade: 1
+  colorAlpha: 255
 --- !u!1001 &1510204965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49232,9 +49162,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 1528558453}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -49290,7 +49222,7 @@ RectTransform:
   m_Children:
   - {fileID: 1431565697}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -49304,7 +49236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528558447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -49987,7 +49919,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -51641,7 +51573,7 @@ RectTransform:
   - {fileID: 416960594}
   - {fileID: 712824664}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -51679,6 +51611,8 @@ MonoBehaviour:
   timer: 1
   time: 20
   timeWhenChoose: 2
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -52326,7 +52260,7 @@ RectTransform:
   - {fileID: 1260606754}
   - {fileID: 889993741}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -52364,6 +52298,8 @@ MonoBehaviour:
   timer: 1
   time: 20
   timeWhenChoose: 2
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -53497,7 +53433,7 @@ RectTransform:
   - {fileID: 1956146601}
   - {fileID: 48546422}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -53535,6 +53471,8 @@ MonoBehaviour:
   timer: 1
   time: 20
   timeWhenChoose: 2
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -53725,7 +53663,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -53775,9 +53713,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 1
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -54489,7 +54429,7 @@ RectTransform:
   m_Children:
   - {fileID: 1543392939}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54565,6 +54505,8 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 0}
@@ -54909,7 +54851,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54959,6 +54901,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -58231,7 +58175,7 @@ GameObject:
   - component: {fileID: 1778765759}
   - component: {fileID: 1778765758}
   m_Layer: 5
-  m_Name: VideoFishing
+  m_Name: VideoFishing***
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58280,6 +58224,8 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -58337,7 +58283,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -59111,6 +59057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810531441}
+  - component: {fileID: 1810531442}
   m_Layer: 0
   m_Name: Ingamec2
   m_TagString: Untagged
@@ -59145,6 +59092,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1810531442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810531440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5398242b1e975184aa1c52ffe4cd4794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1552975828}
+  fade: 1
+  colorAlpha: 255
 --- !u!1 &1812684680
 GameObject:
   m_ObjectHideFlags: 0
@@ -59264,10 +59226,12 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 1
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 1812684685}
-  colorAlpha: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
@@ -59280,7 +59244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812684680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -59753,7 +59717,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -59804,9 +59768,11 @@ MonoBehaviour:
   timer: 0
   time: 20
   timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 1831505448}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -64272,7 +64238,7 @@ RectTransform:
   m_Children:
   - {fileID: 2022585766}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -64350,9 +64316,11 @@ MonoBehaviour:
   timer: 0
   time: 0
   timeWhenChoose: 20
+  FadeIn: 0
+  FadeOut: 1
   loopArray: 0
   oneFrame: 1
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -68418,7 +68386,7 @@ RectTransform:
   m_Children:
   - {fileID: 96865598}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

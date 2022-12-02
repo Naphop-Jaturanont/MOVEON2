@@ -41,6 +41,12 @@ public class TestVideos : MonoBehaviour
     public float timeWhenChoose = 20;
 
     [Space(10)]
+    [Header("Fade in && Fade out")]
+    [Tooltip("if you want Fade in Video")]
+    public bool FadeIn = false;
+    public bool FadeOut = false;
+
+    [Space(10)]
     [Header("Loop")]
     [Tooltip("if you want loop Video in Array")]
     public bool loopArray = false;
@@ -54,7 +60,7 @@ public class TestVideos : MonoBehaviour
     [Header("oneFrame")]
     [Tooltip("if you want play final Video before ingame")]
     public Image fadeImage = null;
-    public float colorAlpha = 0;
+    public float colorAlpha = 255;
     public Color myColor;
     [SerializeField]private bool colorBoolAlpha = false;
     public bool finalVdoBeforeInGame = false;
@@ -72,6 +78,8 @@ public class TestVideos : MonoBehaviour
         quickTime = GetComponent<QuickTimeEvent>();
         dialog = gameObject.transform.GetComponentInChildren<DialogOnVDO>();
         videoPlayer.loopPointReached += changeVdo;
+
+        
     }
     private void Start()
     {
@@ -83,16 +91,40 @@ public class TestVideos : MonoBehaviour
 
     private void Update()
     {
+        if (FadeIn == true)
+        {
+            if (colorAlpha > 0)
+            {
+                if (fadeImage.gameObject.activeInHierarchy == false)
+                {
+                    fadeImage.gameObject.SetActive(true);
+                }
+                colorAlpha -= 255 * Time.deltaTime;
+            }
+            Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+            fadeImage.color = color;
+            if (colorAlpha <= 0)
+            {
+                fadeImage.gameObject.SetActive(false);
+                FadeIn = false;
+                colorAlpha = 0;
+            }
+        }
         
-        if(colorBoolAlpha == true)
+
+        if (colorBoolAlpha == true)
         {
             if (finalVdoBeforeInGame == true )
-            {
-                if (fadeImage != null)
+            {                
+                if (fadeImage != null && FadeOut == true)
                 {
                     myColor.a = 0;
                     if (colorAlpha < 255)
                     {
+                        if(fadeImage.gameObject.activeInHierarchy == false)
+                        {
+                            fadeImage.gameObject.SetActive(true);
+                        }
                         colorAlpha += 255 * Time.deltaTime;
                     }
                     Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
@@ -103,6 +135,7 @@ public class TestVideos : MonoBehaviour
                         {
                             unityEvent.Invoke();
                         }
+                        fadeImage.gameObject.SetActive(false);
                         inGame.SetActive(true);
                         gameObject.SetActive(false);
                         return;
@@ -134,12 +167,36 @@ public class TestVideos : MonoBehaviour
                 }
                 
             }
+            else if (FadeOut == true)
+            {
+                if (colorAlpha < 255)
+                {
+                    if (fadeImage.gameObject.activeInHierarchy == false)
+                    {
+                        fadeImage.gameObject.SetActive(true);
+                    }
+                    colorAlpha += 255 * Time.deltaTime;
+                }
+                Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                fadeImage.color = color;
+                if (colorAlpha >= 255)
+                {
+                    fadeImage.gameObject.SetActive(false);
+                    gameObject.SetActive(false);
+                    checkpoint.PassVideoWantCheck++;
+                    loopWhileChoose.SetActive(true);                    
+                    FadeOut = false;
+                    colorAlpha = 255;
+                    return;
+                }
+            }
             else
             {
                 gameObject.SetActive(false);
                 checkpoint.PassVideoWantCheck++;
                 loopWhileChoose.SetActive(true);
                 return;
+
             }
         }
 
@@ -153,22 +210,50 @@ public class TestVideos : MonoBehaviour
             }
             if (Input.anyKeyDown && dialog.maxLine == true && !Input.GetKeyDown(KeyCode.Escape))
             {
-                if (i < videoClip.Length - 1)
+                i++;
+                if (i <= videoClip.Length - 1)
                 {
-                    i++;
+                    
                     videoCheckpoint.indexVideo = i;
                 }
                 else if (i >= videoClip.Length - 1)
                 {
-                    gameObject.SetActive(false);
-                    checkpoint.PassVideoWantCheck++;
-                    loopWhileChoose.SetActive(true);
+
+                    //gameObject.SetActive(false);
+                    //checkpoint.PassVideoWantCheck++;
+                    //loopWhileChoose.SetActive(true);
                     return;
                 }
 
                 videoPlayer.clip = videoClip[i];
                 videoPlayer.Play();
 
+            }
+            if (i > videoClip.Length - 1)
+            {
+                if (FadeOut == true)
+                {
+                    if (colorAlpha < 255)
+                    {
+                        if (fadeImage.gameObject.activeInHierarchy == false)
+                        {
+                            fadeImage.gameObject.SetActive(true);
+                        }
+                        colorAlpha += 255 * Time.deltaTime;
+                    }
+                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    fadeImage.color = color;
+                    if (colorAlpha >= 255)
+                    {
+                        fadeImage.gameObject.SetActive(false);
+                        gameObject.SetActive(false);
+                        checkpoint.PassVideoWantCheck++;
+                        loopWhileChoose.SetActive(true);
+                        FadeOut = false;
+                        colorAlpha = 255;
+                        return;
+                    }
+                }
             }
         }
         if(pauseGame == null)
