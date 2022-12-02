@@ -25,6 +25,7 @@ public class InteractWhite : MonoBehaviour
     {
         if(interact == true)
         {
+            image.gameObject.SetActive(true);
             if (colorAlpha < 255)
             {
                 colorAlpha += 255 * Time.deltaTime;
@@ -34,6 +35,7 @@ public class InteractWhite : MonoBehaviour
             }
             else if (colorAlpha >= 255)
             {
+                image.gameObject.SetActive(false);
                 inGame.SetActive(false);
                 vdo.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
