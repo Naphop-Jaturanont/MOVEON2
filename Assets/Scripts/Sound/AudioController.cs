@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class AudioController : MonoBehaviour
 {
     public Slider _musicSlider, _sfxSlider;
+    public Slider videoSlider;
     public float musicValue, sfxValue;
+    public float videoValue;
+
+    public VideoPlayer videoplayer;
 
     public void Start()
     {
@@ -18,6 +23,8 @@ public class AudioController : MonoBehaviour
     {
         _musicSlider.value = PlayerPrefs.GetFloat("save music");
         _sfxSlider.value = PlayerPrefs.GetFloat("save sfx");
+        videoSlider.value = videoplayer.GetDirectAudioVolume(0);
+        
     }
     public void MusicVolume()
     {
@@ -30,6 +37,11 @@ public class AudioController : MonoBehaviour
         AudioManager.Instance.SFXVolume(_sfxSlider.value);
         
     }
+    public void VideoVolume()
+    {
+        AudioManager.Instance.MusicVolume(_musicSlider.value);
+
+    }
     public void ChangeMusicSlider(float value)
     {
         //musicValue = value;
@@ -39,5 +51,17 @@ public class AudioController : MonoBehaviour
     {
         //sfxValue = value;
         PlayerPrefs.SetFloat("save sfx", value);
+    }
+
+    public void ChangeVDOSlider(float value)
+    {
+        //sfxValue = value;
+        videoplayer.SetDirectAudioVolume(0, value);
+        PlayerPrefs.SetFloat("save videoSound", value);
+    }
+
+    public void ChangeVideoScripts(GameObject gameObject)
+    {
+        videoplayer = gameObject.GetComponent<VideoPlayer>();
     }
 }

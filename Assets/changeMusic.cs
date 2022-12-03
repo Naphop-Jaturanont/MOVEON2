@@ -5,14 +5,15 @@ using UnityEngine;
 public class changeMusic : MonoBehaviour
 {
     public AudioManager audioManager;
+    public string musicName;
     public bool when;
     // Start is called before the first frame update
     void Start()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        if(when == true)
+        if(when == true && musicName != null)
         {
-            audioManager.PlayMusic("IngameChapter0");
+            audioManager.PlayMusic(musicName);
         }
         else
         {

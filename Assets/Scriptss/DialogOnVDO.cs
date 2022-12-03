@@ -13,11 +13,16 @@ public class DialogOnVDO : MonoBehaviour
     [HideInInspector]public int index;
     public bool maxLine;
     private QuickTimeEvent quickTime;
+    private PauseGame pauseGame;
 
     [SerializeField]private bool check = false;
 
     private IEnumerator enumerator;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        pauseGame = GameObject.Find("CanvasPause").GetComponent<PauseGame>();
+    }
     void Start()
     {
         textMeshPro.text = string.Empty;
@@ -38,28 +43,31 @@ public class DialogOnVDO : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {        
-
-        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
+        if(pauseGame.isPause == false)
         {
-            if(textMeshPro.text == lines[index])
+            if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
             {
-                NextLine();
+                if (textMeshPro.text == lines[index])
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textMeshPro.text = lines[index];
+
+                }
+            }
+            if (textMeshPro.text == lines[index])
+            {
+                maxLine = true;
             }
             else
             {
-                StopAllCoroutines();
-                textMeshPro.text = lines[index];
-                
+                maxLine = false;
             }
         }
-        if(textMeshPro.text == lines[index])
-        {
-            maxLine = true;
-        }
-        else
-        {
-            maxLine = false;
-        }
+        
     }
 
     IEnumerator TypeLine()

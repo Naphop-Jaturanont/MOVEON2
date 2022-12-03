@@ -15,7 +15,7 @@ public class keep : MonoBehaviour
     public GameObject ingame;
     public GameObject vdo;
     public spawnTaovun spawn;
-
+    public AudioController audioController;
     private void Start()
     {
         spawn = GetComponent<spawnTaovun>();
@@ -32,6 +32,7 @@ public class keep : MonoBehaviour
         {
             //spawn.clearObject();
             spawn.clearObject();
+            audioController.ChangeVideoScripts(vdo);
             vdo.gameObject.SetActive(true);
             ingame.SetActive(false);
         }

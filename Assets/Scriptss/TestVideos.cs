@@ -29,6 +29,7 @@ public class TestVideos : MonoBehaviour
     public GameObject choice2 = null;
     public stage1 Stage1;
     public PauseGame pauseGame;
+    public AudioController audioController;
 
     [Space(10)]
     [Header("Timer")]
@@ -45,6 +46,7 @@ public class TestVideos : MonoBehaviour
     [Tooltip("if you want Fade in Video")]
     public bool FadeIn = false;
     public bool FadeOut = false;
+    public bool CheckFadeOut = false;
 
     [Space(10)]
     [Header("Loop")]
@@ -70,6 +72,10 @@ public class TestVideos : MonoBehaviour
     //public VideoClip videoClipchose1;
     //public VideoClip videoClipchose2;
     public int i = 0;
+    public string nameVideo1 = null;
+    public string nameVideo2 = null;
+    public VideoClip[] idleVideo = null;
+
     bool chose;
 
     private void Awake()
@@ -79,7 +85,12 @@ public class TestVideos : MonoBehaviour
         dialog = gameObject.transform.GetComponentInChildren<DialogOnVDO>();
         videoPlayer.loopPointReached += changeVdo;
 
-        
+        if (pauseGame == null)
+        {
+            pauseGame = GameObject.Find("CanvasPause").GetComponent<PauseGame>();
+            pauseGame.vidoplayer = gameObject.GetComponent<TestVideos>();
+        }
+
     }
     private void Start()
     {
@@ -91,147 +102,85 @@ public class TestVideos : MonoBehaviour
 
     private void Update()
     {
-        if (FadeIn == true)
+        if (pauseGame.isPause == false)
         {
-            if (colorAlpha > 0)
+            if (FadeIn == true)
             {
-                if (fadeImage.gameObject.activeInHierarchy == false)
-                {
-                    fadeImage.gameObject.SetActive(true);
-                }
-                colorAlpha -= 255 * Time.deltaTime;
-            }
-            Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
-            fadeImage.color = color;
-            if (colorAlpha <= 0)
-            {
-                fadeImage.gameObject.SetActive(false);
-                FadeIn = false;
-                colorAlpha = 0;
-            }
-        }
-        
-
-        if (colorBoolAlpha == true)
-        {
-            if (finalVdoBeforeInGame == true )
-            {                
-                if (fadeImage != null && FadeOut == true)
-                {
-                    myColor.a = 0;
-                    if (colorAlpha < 255)
-                    {
-                        if(fadeImage.gameObject.activeInHierarchy == false)
-                        {
-                            fadeImage.gameObject.SetActive(true);
-                        }
-                        colorAlpha += 255 * Time.deltaTime;
-                    }
-                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
-                    fadeImage.color = color;
-                    if (colorAlpha >= 255)
-                    {
-                        if(unityEvent != null)
-                        {
-                            unityEvent.Invoke();
-                        }
-                        fadeImage.gameObject.SetActive(false);
-                        inGame.SetActive(true);
-                        gameObject.SetActive(false);
-                        return;
-                    }
-                }
-                else
-                {
-                    inGame.SetActive(true);
-                    gameObject.SetActive(false);
-                }
-                return;
-            }
-            else if (finalVdo == true)
-            {
-                if (fadeImage != null)
-                {
-                    myColor.a = 0;
-                    if (colorAlpha < 255)
-                    {
-                        colorAlpha += 255 * Time.deltaTime;
-                    }
-                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
-                    fadeImage.color = color;
-                    if (colorAlpha >= 255)
-                    {
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                        return;
-                    }
-                }
-                
-            }
-            else if (FadeOut == true)
-            {
-                if (colorAlpha < 255)
+                if (colorAlpha > 0)
                 {
                     if (fadeImage.gameObject.activeInHierarchy == false)
                     {
                         fadeImage.gameObject.SetActive(true);
                     }
-                    colorAlpha += 255 * Time.deltaTime;
+                    colorAlpha -= 255 * Time.deltaTime;
                 }
                 Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
                 fadeImage.color = color;
-                if (colorAlpha >= 255)
+                if (colorAlpha <= 0)
                 {
                     fadeImage.gameObject.SetActive(false);
-                    gameObject.SetActive(false);
-                    checkpoint.PassVideoWantCheck++;
-                    loopWhileChoose.SetActive(true);                    
-                    FadeOut = false;
-                    colorAlpha = 255;
+                    FadeIn = false;
+                    colorAlpha = 0;
+                }
+            }
+
+
+            if (colorBoolAlpha == true)
+            {
+                if (finalVdoBeforeInGame == true)
+                {
+                    if (fadeImage != null && FadeOut == true)
+                    {
+                        myColor.a = 0;
+                        if (colorAlpha < 255)
+                        {
+                            if (fadeImage.gameObject.activeInHierarchy == false)
+                            {
+                                fadeImage.gameObject.SetActive(true);
+                            }
+                            colorAlpha += 255 * Time.deltaTime;
+                        }
+                        Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                        fadeImage.color = color;
+                        if (colorAlpha >= 255)
+                        {
+                            if (unityEvent != null)
+                            {
+                                unityEvent.Invoke();
+                            }
+                            fadeImage.gameObject.SetActive(false);
+                            inGame.SetActive(true);
+                            gameObject.SetActive(false);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        inGame.SetActive(true);
+                        gameObject.SetActive(false);
+                    }
                     return;
                 }
-            }
-            else
-            {
-                gameObject.SetActive(false);
-                checkpoint.PassVideoWantCheck++;
-                loopWhileChoose.SetActive(true);
-                return;
-
-            }
-        }
-
-        
-        if(type == typePlay.playOneFrame)
-        {
-            if (videoPlayer.isPaused == true && !Input.anyKeyDown)
-            {
-                videoPlayer.clip = videoClip[i];
-                videoPlayer.Play();
-            }
-            if (Input.anyKeyDown && dialog.maxLine == true && !Input.GetKeyDown(KeyCode.Escape))
-            {
-                i++;
-                if (i <= videoClip.Length - 1)
+                else if (finalVdo == true)
                 {
-                    
-                    videoCheckpoint.indexVideo = i;
+                    if (fadeImage != null)
+                    {
+                        myColor.a = 0;
+                        if (colorAlpha < 255)
+                        {
+                            colorAlpha += 255 * Time.deltaTime;
+                        }
+                        Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                        fadeImage.color = color;
+                        if (colorAlpha >= 255)
+                        {
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                            return;
+                        }
+                    }
+
                 }
-                else if (i >= videoClip.Length - 1)
-                {
-
-                    //gameObject.SetActive(false);
-                    //checkpoint.PassVideoWantCheck++;
-                    //loopWhileChoose.SetActive(true);
-                    return;
-                }
-
-                videoPlayer.clip = videoClip[i];
-                videoPlayer.Play();
-
-            }
-            if (i > videoClip.Length - 1)
-            {
-                if (FadeOut == true)
+                else if (FadeOut == true)
                 {
                     if (colorAlpha < 255)
                     {
@@ -248,6 +197,97 @@ public class TestVideos : MonoBehaviour
                         fadeImage.gameObject.SetActive(false);
                         gameObject.SetActive(false);
                         checkpoint.PassVideoWantCheck++;
+                        audioController.ChangeVideoScripts(loopWhileChoose);
+                        loopWhileChoose.SetActive(true);
+                        FadeOut = false;
+                        colorAlpha = 255;
+                        return;
+                    }
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                    checkpoint.PassVideoWantCheck++;
+                    audioController.ChangeVideoScripts(loopWhileChoose);
+                    loopWhileChoose.SetActive(true);
+                    return;
+
+                }
+            }
+
+
+            if (type == typePlay.playOneFrame)
+            {
+                if (videoPlayer.isPaused == true && !Input.anyKeyDown)
+                {
+                    if(nameVideo1 != null || nameVideo2 != null)
+                    {
+                        if (videoClip[i].name == nameVideo1)
+                        {
+                            videoPlayer.clip = idleVideo[0];
+                            videoPlayer.Play();
+                            videoPlayer.isLooping = true;
+                        }
+                        else if (videoClip[i].name == nameVideo2)
+                        {
+                            videoPlayer.clip = idleVideo[1];
+                            videoPlayer.Play();
+                            videoPlayer.isLooping = true;
+                        }
+                    }                    
+                    else
+                    {
+                        videoPlayer.clip = videoClip[i];
+                        videoPlayer.Play();
+                    }
+                    
+                }
+                if (Input.anyKeyDown && dialog.maxLine == true && !Input.GetKeyDown(KeyCode.Escape))
+                {
+                    videoPlayer.isLooping = false;
+                    if (i < videoClip.Length - 1)
+                    {
+                        i++;
+                        videoCheckpoint.indexVideo = i;
+                    }
+                    else if (i >= videoClip.Length - 1)
+                    {
+                        if(FadeOut == true)
+                        {
+                            CheckFadeOut = true;
+                        }
+                        else
+                        {
+                            gameObject.SetActive(false);
+                            checkpoint.PassVideoWantCheck++;
+                            audioController.ChangeVideoScripts(loopWhileChoose);
+                            loopWhileChoose.SetActive(true);
+                        }                       
+                        return;
+                    }
+
+                    videoPlayer.clip = videoClip[i];
+                    videoPlayer.Play();
+
+                }
+                if (CheckFadeOut == true)
+                {
+                    if (colorAlpha < 255)
+                    {
+                        if (fadeImage.gameObject.activeInHierarchy == false)
+                        {
+                            fadeImage.gameObject.SetActive(true);
+                        }
+                        colorAlpha += 255 * Time.deltaTime;
+                    }
+                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    fadeImage.color = color;
+                    if (colorAlpha >= 255)
+                    {
+                        fadeImage.gameObject.SetActive(false);
+                        gameObject.SetActive(false);
+                        checkpoint.PassVideoWantCheck++;
+                        audioController.ChangeVideoScripts(loopWhileChoose);
                         loopWhileChoose.SetActive(true);
                         FadeOut = false;
                         colorAlpha = 255;
@@ -255,28 +295,25 @@ public class TestVideos : MonoBehaviour
                     }
                 }
             }
-        }
-        if(pauseGame == null)
-        {
-            pauseGame = GameObject.Find("CanvasPause").GetComponent<PauseGame>();
-            pauseGame.vidoplayer = gameObject.GetComponent<TestVideos>();
-        }
-        
 
-        if (timer == true)
-        {
-            imageValue.fillAmount = time / maxTime;
-            if(imageValue1)
+
+
+            if (timer == true)
             {
-                imageValue1.fillAmount = time / maxTime;
-            }            
-            time -= timeWhenChoose * Time.deltaTime;            
-            if(time <= 0)
-            {
-                timer = false;
+                imageValue.fillAmount = time / maxTime;
+                if (imageValue1)
+                {
+                    imageValue1.fillAmount = time / maxTime;
+                }
+                time -= timeWhenChoose * Time.deltaTime;
+                if (time <= 0)
+                {
+                    timer = false;
+                }
             }
         }
     }
+    
     public void changeVdo(VideoPlayer vp)
     {
         switch (type)
@@ -337,11 +374,13 @@ public class TestVideos : MonoBehaviour
             case 1:
                 gameObject.SetActive(false);
                 videoPlayer.Stop();
+                audioController.ChangeVideoScripts(choice1);
                 choice1.SetActive(true);
                 break;
             case 2:
                 gameObject.SetActive(false);
                 videoPlayer.Stop();
+                audioController.ChangeVideoScripts(choice2);
                 choice2.SetActive(true);
                 break;
         }
@@ -389,4 +428,5 @@ public class TestVideos : MonoBehaviour
         }
         
     }
+
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerForOpenVDO : MonoBehaviour
 {
+    public FadeInGame fadeInGame;
     public GameObject inGame;
     public GameObject vDOWanOpen;
     public Light lightInGame;
@@ -30,6 +31,7 @@ public class TriggerForOpenVDO : MonoBehaviour
         if(other.tag == "Player")
         {
             closeLight = true;
+            //fadeInGame.fadeout = true;
         }
     }
 }

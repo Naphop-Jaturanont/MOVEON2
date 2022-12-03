@@ -1977,6 +1977,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -1984,6 +1985,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -1993,6 +1995,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &56209731
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -4553,7 +4558,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107751852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -5080,6 +5085,7 @@ MonoBehaviour:
   choice2: {fileID: 173596505}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 618461591}
   imageValue1: {fileID: 0}
   timer: 1
@@ -5087,6 +5093,7 @@ MonoBehaviour:
   timeWhenChoose: 2
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -5096,6 +5103,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &120489214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5954,8 +5964,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSlider: {fileID: 2069056916}
   _sfxSlider: {fileID: 2069056915}
+  videoSlider: {fileID: 1227543139}
   musicValue: 0
   sfxValue: 0
+  videoValue: 0
+  videoplayer: {fileID: 1812684682}
 --- !u!4 &147230256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2764951679793644854, guid: da5180a4b9578a448afd7a1e943084ae,
@@ -6772,6 +6785,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -6779,6 +6793,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -6788,6 +6803,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &173596509
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -7078,7 +7096,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184488483}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -10455,6 +10473,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -10462,6 +10481,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -10471,6 +10491,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &289729407
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -14498,6 +14521,7 @@ MonoBehaviour:
   choice2: {fileID: 602511516}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -14505,6 +14529,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -14514,6 +14539,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &428401583
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -15549,6 +15577,7 @@ MonoBehaviour:
   choice2: {fileID: 725706426}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 1477352670}
   imageValue1: {fileID: 0}
   timer: 1
@@ -15556,6 +15585,7 @@ MonoBehaviour:
   timeWhenChoose: 2
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -15565,6 +15595,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &458809905
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -15955,7 +15988,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467014369}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -17593,6 +17626,7 @@ MonoBehaviour:
   choice2: {fileID: 1944236351}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -17600,6 +17634,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -17609,6 +17644,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &517504070
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -17725,6 +17763,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 519645413}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &520495411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520495412}
+  - component: {fileID: 520495413}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &520495412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520495411}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -965.53986, y: -542.93243, z: 15.95613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1486396938}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520495413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520495411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  musicName: 
+  when: 0
 --- !u!4 &521363484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4579906682476779975, guid: 770815106fb2a4247900a6885b18ec40,
@@ -19063,6 +19148,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -19070,15 +19156,19 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 1
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
-  colorAlpha: 0
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &566303060
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -19852,6 +19942,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -19859,6 +19950,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -19868,6 +19960,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 1
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &602511520
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -20052,7 +20147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604457428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -21166,7 +21261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637862430}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -22462,6 +22557,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -22469,15 +22565,19 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 784571877}
-  colorAlpha: 0
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 1
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &674752390
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -23339,6 +23439,7 @@ MonoBehaviour:
   choice2: {fileID: 717360059}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -23346,6 +23447,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 691247864}
@@ -23355,6 +23457,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &691247863
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -24632,6 +24737,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770815106fb2a4247900a6885b18ec40, type: 3}
+--- !u!1 &717353451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717353452}
+  - component: {fileID: 717353453}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &717353452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717353451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.539831, y: -2.9324412, z: 15.95613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1510146429}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &717353453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717353451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  musicName: stage1
+  when: 1
 --- !u!1 &717360059
 GameObject:
   m_ObjectHideFlags: 0
@@ -24710,6 +24862,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -24717,15 +24870,19 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
-  colorAlpha: 0
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &717360063
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -24977,6 +25134,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -24984,6 +25142,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -24993,6 +25152,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &725706430
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -26408,22 +26570,27 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
   time: 20
   timeWhenChoose: 1
-  FadeIn: 0
+  FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
-  fadeImage: {fileID: 0}
-  colorAlpha: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &787940253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28205,7 +28372,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829245707}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -30634,6 +30801,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -30641,6 +30809,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 1552975828}
@@ -30650,6 +30819,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &911322672
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -33309,6 +33481,7 @@ MonoBehaviour:
   ingame: {fileID: 1810531440}
   vdo: {fileID: 1778765757}
   spawn: {fileID: 1030075349}
+  audioController: {fileID: 0}
 --- !u!114 &1030075349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33562,6 +33735,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -33569,6 +33743,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -33578,6 +33753,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1035916262
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -34846,6 +35024,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -34853,6 +35032,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -34862,6 +35042,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1057954753
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -39707,6 +39890,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 100144441}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1227543139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1804256684181013788, guid: 241c9de2b7c080f4ebec433893b371fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 779622596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1228334917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45739,6 +45934,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -45746,6 +45942,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 1
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -45755,6 +45952,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1420785893
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -46606,6 +46806,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -46613,6 +46814,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 0}
@@ -46622,6 +46824,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1443646182
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -48266,6 +48471,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1391412795}
+  - {fileID: 520495412}
   m_Father: {fileID: 145715674}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48343,22 +48549,29 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
   time: 0
   timeWhenChoose: 20
   FadeIn: 1
-  FadeOut: 0
+  FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 1552975828}
-  colorAlpha: 0
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: asdafw0001-0245
+  nameVideo2: asdafw0001-0186
+  idleVideo:
+  - {fileID: 32900000, guid: e8d1a1f1400212f49b5991ac22c92dca, type: 3}
+  - {fileID: 32900000, guid: fbafe307017c7704d88aa29192a5b0fc, type: 3}
 --- !u!328 &1486396942
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -48375,7 +48588,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
@@ -48386,7 +48599,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -48473,6 +48686,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da5180a4b9578a448afd7a1e943084ae, type: 3}
+--- !u!1 &1505128339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505128340}
+  - component: {fileID: 1505128341}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1505128340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505128339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.539831, y: -2.9324412, z: 15.95613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1810531441}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505128341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505128339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  musicName: stage1
+  when: 1
 --- !u!1 &1508606638
 GameObject:
   m_ObjectHideFlags: 0
@@ -48803,6 +49063,7 @@ Transform:
   - {fileID: 1731564947}
   - {fileID: 1703943905}
   - {fileID: 543450653008892849}
+  - {fileID: 717353452}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48820,7 +49081,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1552975828}
   fade: 1
+  fadeout: 0
   colorAlpha: 255
+  vdoWantPlay: {fileID: 0}
+  inGame: {fileID: 0}
+  audioController: {fileID: 0}
 --- !u!1001 &1510204965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49157,6 +49422,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -49164,6 +49430,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -49173,6 +49440,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1528558451
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -51606,6 +51876,7 @@ MonoBehaviour:
   choice2: {fileID: 691247859}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 342453291}
   imageValue1: {fileID: 0}
   timer: 1
@@ -51613,6 +51884,7 @@ MonoBehaviour:
   timeWhenChoose: 2
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -51622,6 +51894,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &1621893846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52293,6 +52568,7 @@ MonoBehaviour:
   choice2: {fileID: 56209727}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 1996604584}
   imageValue1: {fileID: 0}
   timer: 1
@@ -52300,6 +52576,7 @@ MonoBehaviour:
   timeWhenChoose: 2
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -52309,6 +52586,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &1650752752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53466,6 +53746,7 @@ MonoBehaviour:
   choice2: {fileID: 1700145389}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 560344141}
   imageValue1: {fileID: 0}
   timer: 1
@@ -53473,6 +53754,7 @@ MonoBehaviour:
   timeWhenChoose: 2
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 1
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -53482,6 +53764,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &1670675386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53708,22 +53993,27 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
   time: 20
   timeWhenChoose: 1
   FadeIn: 1
-  FadeOut: 0
+  FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
-  colorAlpha: 0
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1676739340
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -54500,6 +54790,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -54507,6 +54798,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 0}
@@ -54516,6 +54808,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1693977549
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -54896,6 +55191,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -54903,6 +55199,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 0}
@@ -54912,6 +55209,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1700145393
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -56119,7 +56419,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728338498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -57888,7 +58188,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772445695}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -58175,7 +58475,7 @@ GameObject:
   - component: {fileID: 1778765759}
   - component: {fileID: 1778765758}
   m_Layer: 5
-  m_Name: VideoFishing***
+  m_Name: VideoFishing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58219,22 +58519,27 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
   time: 20
   timeWhenChoose: 1
-  FadeIn: 0
+  FadeIn: 1
   FadeOut: 0
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 0}
-  colorAlpha: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 255
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1778765760
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -58281,7 +58586,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2097517868}
   m_Father: {fileID: 145715674}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59089,6 +59395,7 @@ Transform:
   - {fileID: 1295281376}
   - {fileID: 386255121}
   - {fileID: 991158391}
+  - {fileID: 1505128340}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59106,7 +59413,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1552975828}
   fade: 1
+  fadeout: 0
   colorAlpha: 255
+  vdoWantPlay: {fileID: 0}
+  inGame: {fileID: 0}
+  audioController: {fileID: 0}
 --- !u!1 &1812684680
 GameObject:
   m_ObjectHideFlags: 0
@@ -59221,6 +59532,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -59228,6 +59540,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 1
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -59237,6 +59550,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 1
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!114 &1812684685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59763,6 +60079,7 @@ MonoBehaviour:
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -59770,6 +60087,7 @@ MonoBehaviour:
   timeWhenChoose: 1
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
   fadeImage: {fileID: 1552975828}
@@ -59779,6 +60097,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1831505447
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -64311,6 +64632,7 @@ MonoBehaviour:
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -64318,6 +64640,7 @@ MonoBehaviour:
   timeWhenChoose: 20
   FadeIn: 0
   FadeOut: 1
+  CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
   fadeImage: {fileID: 1552975828}
@@ -64327,6 +64650,9 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 0
   i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
 --- !u!328 &1944236356
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -66439,6 +66765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 0}
+  musicName: 
   when: 0
 --- !u!4 &2001166137
 Transform:
@@ -69604,6 +69931,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 106320749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2097517867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097517868}
+  - component: {fileID: 2097517869}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2097517868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097517867}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -965.53986, y: -542.93243, z: 15.95613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1778765761}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2097517869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097517867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  musicName: 
+  when: 0
 --- !u!4 &2103298469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5756718257484866086, guid: 67068ab830fc3c64f8610cf59416e32a,
