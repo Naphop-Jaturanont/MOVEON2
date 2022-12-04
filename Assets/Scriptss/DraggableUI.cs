@@ -28,6 +28,8 @@ public class DraggableUI : MonoBehaviour, IDragHandler
 
     private void Update()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         if (Input.GetMouseButton(0))
         {
             UpdateMousePosition();
@@ -67,6 +69,8 @@ public class DraggableUI : MonoBehaviour, IDragHandler
     {
         if (Vector3.Distance(imgTarget.transform.position,imgTargetPress.transform.position) < 5f)
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             checkPosition = true;
         }
         else

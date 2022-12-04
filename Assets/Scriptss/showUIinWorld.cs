@@ -7,6 +7,10 @@ public class showUIinWorld : MonoBehaviour
     public GameObject uiInW;
     public Transform player;
 
+    private void Awake()
+    {
+        player = GameObject.Find("head").GetComponent<Transform>();
+    }
     private void Update()
     {
         

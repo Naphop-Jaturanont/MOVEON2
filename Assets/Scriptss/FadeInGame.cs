@@ -12,6 +12,9 @@ public class FadeInGame : MonoBehaviour
     public GameObject vdoWantPlay = null;
     public GameObject inGame = null;
     public AudioController audioController;
+
+    public GameObject mainCamera;
+    public GameObject cameraForVideo;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +59,8 @@ public class FadeInGame : MonoBehaviour
             if (colorAlpha >= 255)
             {
                 inGame.SetActive(false);
+                mainCamera.SetActive(false);
+                cameraForVideo.SetActive(true);
                 vdoWantPlay.SetActive(true);
                 audioController.ChangeVideoScripts(vdoWantPlay);
                 image.gameObject.SetActive(false);

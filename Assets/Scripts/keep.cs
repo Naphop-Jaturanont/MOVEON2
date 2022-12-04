@@ -16,6 +16,8 @@ public class keep : MonoBehaviour
     public GameObject vdo;
     public spawnTaovun spawn;
     public AudioController audioController;
+    public GameObject mainCamera;
+    public GameObject cameraForVideo;
     private void Start()
     {
         spawn = GetComponent<spawnTaovun>();
@@ -34,7 +36,9 @@ public class keep : MonoBehaviour
             spawn.clearObject();
             audioController.ChangeVideoScripts(vdo);
             vdo.gameObject.SetActive(true);
+            cameraForVideo.SetActive(true);
             ingame.SetActive(false);
+            mainCamera.SetActive(false);
         }
 
         if (vDO.index >= vDO.lines.Length - 1 && vDO.maxLine == true)

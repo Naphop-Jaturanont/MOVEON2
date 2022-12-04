@@ -28,6 +28,9 @@ public class KeepTaovun : MonoBehaviour, IInteractable
     }
     public bool Interact(Interactor interactor)
     {
+        movement Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
+        Movement.enable = true;
+        Movement.animator.SetFloat("speed", 0f);
         Destroy(gameObject);
         if (keepStick.keepStick == true)
         {

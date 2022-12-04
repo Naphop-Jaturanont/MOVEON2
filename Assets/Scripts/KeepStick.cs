@@ -18,7 +18,9 @@ public class KeepStick : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        
+        movement Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
+        Movement.enable = true;
+        Movement.animator.SetFloat("speed", 0f);
         if (keepStick.keepTaovun == true)
         {
             panelFinish.SetActive(true);

@@ -49,8 +49,8 @@ public class movement : MonoBehaviour
     private Quaternion lookRight;
     private AudioManager audioManager;
     float delaytime = 0.1f;
-    
 
+    public bool enable = false;
     //
     private void Start()
     {
@@ -91,18 +91,22 @@ public class movement : MonoBehaviour
         {
             playerVelocity.y = -2f;
         }
-        switch (Viewpoint)
+        if(enable == false)
         {
-            case viewpoint.FPS:
-                FPSMove();
-                break;
-            case viewpoint.TPS:
-                TPSMove();
-                break;
-            case viewpoint.SC:
-                SCMove();
-                break;
+            switch (Viewpoint)
+            {
+                case viewpoint.FPS:
+                    FPSMove();
+                    break;
+                case viewpoint.TPS:
+                    TPSMove();
+                    break;
+                case viewpoint.SC:
+                    SCMove();
+                    break;
+            }
         }
+        
         
 
 

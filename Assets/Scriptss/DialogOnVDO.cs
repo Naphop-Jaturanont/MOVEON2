@@ -12,6 +12,7 @@ public class DialogOnVDO : MonoBehaviour
 
     [HideInInspector]public int index;
     public bool maxLine;
+    public bool ingame = false;
     private QuickTimeEvent quickTime;
     private PauseGame pauseGame;
 
@@ -89,6 +90,11 @@ public class DialogOnVDO : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            if(ingame == true)
+            {
+                movement Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
+                Movement.enable = false;
+            }
         }
     }
 

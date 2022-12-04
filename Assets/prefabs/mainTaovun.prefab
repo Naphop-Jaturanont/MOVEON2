@@ -39,21 +39,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3553256262189419054}
     m_Modifications:
-    - target: {fileID: 2022456174, guid: 0c23dcc5c24f7e443b976d739448ce41, type: 3}
-      propertyPath: panelEnough
-      value: 
-      objectReference: {fileID: 8280295722680516512, guid: efcc38713999ddd43969d8b9f3f960da,
-        type: 3}
-    - target: {fileID: 2022456174, guid: 0c23dcc5c24f7e443b976d739448ce41, type: 3}
-      propertyPath: panelFinish
-      value: 
-      objectReference: {fileID: 3273848759891598182, guid: 623143be4b975984280df132f975f991,
-        type: 3}
-    - target: {fileID: 2022456174, guid: 0c23dcc5c24f7e443b976d739448ce41, type: 3}
-      propertyPath: panelKeepTaovun
-      value: 
-      objectReference: {fileID: 8736865207432752201, guid: 1abe358e380c3bc43853a12de6273857,
-        type: 3}
     - target: {fileID: 8601784304458605015, guid: 0c23dcc5c24f7e443b976d739448ce41,
         type: 3}
       propertyPath: m_RootOrder

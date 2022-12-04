@@ -78,6 +78,10 @@ public class TestVideos : MonoBehaviour
 
     bool chose;
 
+    //solve camera
+    public GameObject mainCamera;
+    public GameObject cameraForVideo;
+
     private void Awake()
     {
         checkpoint = GameObject.Find("checkpointmanager").GetComponent<Checkpoint>();
@@ -148,6 +152,8 @@ public class TestVideos : MonoBehaviour
                             {
                                 unityEvent.Invoke();
                             }
+                            mainCamera.SetActive(true);
+                            cameraForVideo.SetActive(false);
                             fadeImage.gameObject.SetActive(false);
                             inGame.SetActive(true);
                             gameObject.SetActive(false);
@@ -156,6 +162,8 @@ public class TestVideos : MonoBehaviour
                     }
                     else
                     {
+                        mainCamera.SetActive(true);
+                        cameraForVideo.SetActive(false);
                         inGame.SetActive(true);
                         gameObject.SetActive(false);
                     }
@@ -224,7 +232,9 @@ public class TestVideos : MonoBehaviour
                     {
                         if (videoClip[i].name == nameVideo1)
                         {
+                            Debug.Log(videoPlayer.clip);
                             videoPlayer.clip = idleVideo[0];
+                            Debug.Log(videoPlayer.clip);
                             videoPlayer.Play();
                             videoPlayer.isLooping = true;
                         }

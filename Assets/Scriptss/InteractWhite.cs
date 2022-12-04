@@ -8,6 +8,9 @@ public class InteractWhite : MonoBehaviour
     public GameObject inGame;
     public GameObject vdo;
 
+    public GameObject mainCamera;
+    public GameObject cameraForVDO;
+
     public bool interact = false;
 
     public Image image;
@@ -35,8 +38,11 @@ public class InteractWhite : MonoBehaviour
             }
             else if (colorAlpha >= 255)
             {
+                
                 image.gameObject.SetActive(false);
                 inGame.SetActive(false);
+                mainCamera.SetActive(false);
+                cameraForVDO.SetActive(true);
                 vdo.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -49,6 +55,11 @@ public class InteractWhite : MonoBehaviour
         if(other.tag == "Player")
         {
             interact = true;
+            Rigidbody rigidbody = GameObject.Find("MainCharacter1").GetComponent<Rigidbody>();
+            rigidbody.useGravity = false;
+            movement Movement = GameObject.Find("MainCharacter1").GetComponent<movement>();
+            Movement.enable = true;
+            Movement.animator.SetFloat("speed", 0);
         }
     }
 
