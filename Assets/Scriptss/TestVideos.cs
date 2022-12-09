@@ -30,6 +30,8 @@ public class TestVideos : MonoBehaviour
     public stage1 Stage1;
     public PauseGame pauseGame;
     public AudioController audioController;
+    public changeMusic ChangeMusic = null;
+    public bool wantChangeMusic = false;
 
     [Space(10)]
     [Header("Timer")]
@@ -108,6 +110,14 @@ public class TestVideos : MonoBehaviour
     {
         if (pauseGame.isPause == false)
         {
+            if (wantChangeMusic == true)
+            {
+                if (videoPlayer.time >= ((videoClip[i].length * 3) / 4))
+                {
+                    ChangeMusic.fadeout = true;
+                    wantChangeMusic = false;
+                }
+            }
             if (FadeIn == true)
             {
                 if (colorAlpha > 0)

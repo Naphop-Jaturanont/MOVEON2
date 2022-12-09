@@ -1978,6 +1978,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -5088,6 +5090,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 618461591}
   imageValue1: {fileID: 0}
   timer: 1
@@ -5549,6 +5553,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -6971,6 +6977,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -10661,6 +10669,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -14711,6 +14721,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -15905,6 +15917,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 1477352670}
   imageValue1: {fileID: 0}
   timer: 1
@@ -17956,6 +17970,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -18138,9 +18154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointFade: 0
   audioManager: {fileID: 0}
   musicName: 
   when: 0
+  fadeout: 0
+  fadein: 0
 --- !u!4 &521363484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4579906682476779975, guid: 770815106fb2a4247900a6885b18ec40,
@@ -19480,6 +19499,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -20352,6 +20373,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -22969,6 +22992,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -23853,6 +23878,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -25168,7 +25195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &717353452
 Transform:
   m_ObjectHideFlags: 0
@@ -25177,12 +25204,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717353451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.539831, y: -2.9324412, z: 15.95613}
+  m_LocalPosition: {x: -965.53986, y: -542.93243, z: 15.95613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1510146429}
-  m_RootOrder: 15
+  m_Father: {fileID: 1812684681}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &717353453
 MonoBehaviour:
@@ -25196,9 +25223,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointFade: 0
   audioManager: {fileID: 0}
   musicName: stage1
   when: 1
+  fadeout: 0
+  fadein: 0
 --- !u!1 &717360059
 GameObject:
   m_ObjectHideFlags: 0
@@ -25278,6 +25308,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -25552,6 +25584,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -27020,6 +27054,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -31253,6 +31289,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -34193,6 +34231,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -35484,6 +35524,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -46394,12 +46436,14 @@ MonoBehaviour:
   - {fileID: 32900000, guid: fccd74af62f3ae0488b0315534bb587d, type: 3}
   videoCheckpoint: {fileID: 1420785891}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 1486396937}
+  loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -47294,6 +47338,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -49159,6 +49205,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -49341,9 +49389,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointFade: 0
   audioManager: {fileID: 0}
   musicName: stage1
   when: 1
+  fadeout: 0
+  fadein: 0
 --- !u!1 &1508606638
 GameObject:
   m_ObjectHideFlags: 0
@@ -49811,7 +49862,6 @@ Transform:
   - {fileID: 1731564947}
   - {fileID: 1703943905}
   - {fileID: 543450653008892849}
-  - {fileID: 717353452}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50173,6 +50223,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -52766,6 +52818,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 342453291}
   imageValue1: {fileID: 0}
   timer: 1
@@ -53460,6 +53514,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 1996604584}
   imageValue1: {fileID: 0}
   timer: 1
@@ -54640,6 +54696,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 560344141}
   imageValue1: {fileID: 0}
   timer: 1
@@ -54890,6 +54948,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -55689,6 +55749,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -56094,6 +56156,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -59461,6 +59525,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -60481,6 +60547,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -60570,7 +60638,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 717353452}
   m_Father: {fileID: 145715674}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60653,6 +60722,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -61202,6 +61273,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -65758,6 +65831,8 @@ MonoBehaviour:
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
   pauseGame: {fileID: 0}
   audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
   imageValue: {fileID: 0}
   imageValue1: {fileID: 0}
   timer: 0
@@ -67893,9 +67968,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointFade: 0
   audioManager: {fileID: 0}
   musicName: 
   when: 0
+  fadeout: 0
+  fadein: 0
 --- !u!4 &2001166137
 Transform:
   m_ObjectHideFlags: 0
@@ -71105,9 +71183,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointFade: 0
   audioManager: {fileID: 0}
   musicName: 
   when: 0
+  fadeout: 0
+  fadein: 0
 --- !u!4 &2103298469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5756718257484866086, guid: 67068ab830fc3c64f8610cf59416e32a,

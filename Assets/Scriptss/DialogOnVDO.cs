@@ -52,7 +52,7 @@ public class DialogOnVDO : MonoBehaviour
                 {
                     NextLine();
                 }
-                else
+                else 
                 {
                     StopAllCoroutines();
                     textMeshPro.text = lines[index];
