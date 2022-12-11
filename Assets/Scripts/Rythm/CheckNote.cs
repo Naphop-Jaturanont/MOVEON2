@@ -15,11 +15,16 @@ public class CheckNote : MonoBehaviour
 
     public QuickTimeEvent quickTime;
     private Notemanager notemanager;
+    public GameObject parent;
     private state State;
+
+    public Animator animator;
+    public bool canPress = true;
 
     private void Awake()
     {
         notemanager = GameObject.Find("notemanager").GetComponent<Notemanager>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -43,41 +48,51 @@ public class CheckNote : MonoBehaviour
         switch (State)
         {
             case state.FirstBtn:
-                if (Input.GetKeyDown(quickTime.key1) && notemanager.changePress[0] == true)
+                if (Input.GetKeyDown(quickTime.key1) && notemanager.changePress[0] == true && canPress == true)
                 {
+                    animator.SetTrigger("Press");
                     if (canBePressed)
                     {
                         noteObject.k = true;
                         img.color = color1;
                         if (noteObject.finalNote == true)
                         {
+                            //animator.ResetTrigger("Press");
                             quickTime.checkRhythm("finish");
+                            Invoke("closePanel", 1.5f);
                             return;
                         }
                     }
                     if (this.canBePressed == false)
                     {
+                        //animator.ResetTrigger("Press");
                         quickTime.checkRhythm("fail");
+                        Invoke("closePanel", 1.5f);
                         Debug.Log("Miss2");
                     }
-                }
+                }               
                 break;
             case state.SecondBtn:
-                if (Input.GetKeyDown(quickTime.key2) && notemanager.changePress[1] == true)
+                if (Input.GetKeyDown(quickTime.key2) && notemanager.changePress[1] == true && canPress == true)
                 {
+                    animator.SetTrigger("Press");
                     if (canBePressed)
                     {
                         noteObject.k = true;
                         img.color = color1;
+                        //animator.ResetTrigger("Press");
                         if (noteObject.finalNote == true)
                         {
                             quickTime.checkRhythm("finish");
+                            Invoke("closePanel", 1.5f);
                             return;
                         }
                     }
                     if (this.canBePressed == false)
                     {
+                        //animator.ResetTrigger("Press");
                         quickTime.checkRhythm("fail");
+                        Invoke("closePanel", 1.5f);
                         Debug.Log("Miss2");
                     }
                 }
@@ -117,5 +132,10 @@ public class CheckNote : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void closePanel()
+    {
+        parent.SetActive(false);
     }
 }
