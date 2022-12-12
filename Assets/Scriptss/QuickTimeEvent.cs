@@ -51,24 +51,38 @@ public class QuickTimeEvent : MonoBehaviour
         switch (typeQuickEvent)
         {
             case TypeQuickEvent.Press:
+
                 panelQuicktime.SetActive(true);
+
                 checkPress();
+
                 break;
             case TypeQuickEvent.RepeatPress:
+
                 panelQuicktime.SetActive(true);
+
                 //animator
                 checkRepeatPress();
+
                 break;
             case TypeQuickEvent.Rhythm:
+
                 panelQuicktime.SetActive(true);
+
                 break;
             case TypeQuickEvent.Aim:
+
                 panelQuicktime.SetActive(true);
+
                 checkAim();
+
                 break;
             case TypeQuickEvent.QuiclPress:
+
                 panelQuicktime.SetActive(true);
+
                 checkQuickPress();
+
                 break;
 
         }
@@ -166,14 +180,17 @@ public class QuickTimeEvent : MonoBehaviour
     {
         if (Input.GetKeyDown(key1))
         {
-            fillImage.fillAmount += (float)0.125;
+            fillImage.fillAmount += (float)0.175;
             Debug.Log(fillImage.fillAmount);
             if(fillImage.fillAmount >= 1 && videos.timer == true)
             {
+                Invoke("closeDelay", 1.5f);
                 videos.chooseChoice(success);
             }
             else if(fillImage.fillAmount < 1 && videos.timer == false && videos.time <=0)
             {
+                fillImage.color = Color.red;
+                panelQuicktime.SetActive(false);
                 Debug.Log("fail");
                 videos.chooseChoice(fail);
             }
@@ -186,7 +203,9 @@ public class QuickTimeEvent : MonoBehaviour
 
         if (fillImage.fillAmount < 1 && videos.timer == false && videos.time <= 0)
         {
+            fillImage.color = Color.red;
             Debug.Log("fail");
+            Invoke("closeDelay", 1.5f);
             videos.chooseChoice(fail);
         }
     }

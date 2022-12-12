@@ -14,6 +14,7 @@ public class CheckNote : MonoBehaviour
     public NoteObject noteObject;
 
     public QuickTimeEvent quickTime;
+    public BeatScoller beatScoller;
     private Notemanager notemanager;
     public GameObject parent;
     private state State;
@@ -66,6 +67,7 @@ public class CheckNote : MonoBehaviour
                     if (this.canBePressed == false)
                     {
                         //animator.ResetTrigger("Press");
+                        beatScoller.hasStarted = false;
                         quickTime.checkRhythm("fail");
                         Invoke("closePanel", 1.5f);
                         Debug.Log("Miss2");
@@ -91,6 +93,7 @@ public class CheckNote : MonoBehaviour
                     if (this.canBePressed == false)
                     {
                         //animator.ResetTrigger("Press");
+                        beatScoller.hasStarted = false;
                         quickTime.checkRhythm("fail");
                         Invoke("closePanel", 1.5f);
                         Debug.Log("Miss2");
