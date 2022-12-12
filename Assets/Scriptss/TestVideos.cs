@@ -183,6 +183,7 @@ public class TestVideos : MonoBehaviour
                 {
                     if (fadeImage != null)
                     {
+                        fadeImage.gameObject.SetActive(true);                        
                         myColor.a = 0;
                         if (colorAlpha < 255)
                         {

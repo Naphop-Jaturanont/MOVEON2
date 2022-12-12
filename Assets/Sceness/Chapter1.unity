@@ -4956,7 +4956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &128947184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5046,14 +5046,14 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   videoCheckpoint: {fileID: 128947186}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 517504065}
+  loopWhileChoose: {fileID: 1810962978}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -5067,11 +5067,11 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   FadeIn: 0
-  FadeOut: 1
+  FadeOut: 0
   CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
@@ -47479,7 +47479,7 @@ MonoBehaviour:
   - "\u0E44\u0E14\u0E49\u0E46"
   - "\u0E1D\u0E31\u0E19\u0E14\u0E35\u0E19\u0E30 \u0E21\u0E48\u0E27\u0E07"
   - "\u0E1D\u0E31\u0E19\u0E14\u0E35"
-  textSpeed: 0.025
+  textSpeed: 0.04
   index: 0
   maxLine: 0
   ingame: 0
@@ -57901,7 +57901,7 @@ MonoBehaviour:
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
-  finalVdo: 1
+  finalVdo: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -57963,7 +57963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
