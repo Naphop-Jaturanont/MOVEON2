@@ -254,6 +254,12 @@ public class TestVideos : MonoBehaviour
                             videoPlayer.Play();
                             videoPlayer.isLooping = true;
                         }
+                        else
+                        {
+                            videoPlayer.clip = videoClip[i];
+                            videoPlayer.Play();
+                            videoPlayer.isLooping = true;
+                        }
                     }                    
                     else
                     {

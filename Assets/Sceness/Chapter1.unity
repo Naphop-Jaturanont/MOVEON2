@@ -4956,7 +4956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &128947184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5038,18 +5038,18 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: ab63ab70a0197b6459031cf20b172f42, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: ab63ab70a0197b6459031cf20b172f42, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: ab63ab70a0197b6459031cf20b172f42, type: 3}
-  - {fileID: 32900000, guid: ab63ab70a0197b6459031cf20b172f42, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   videoCheckpoint: {fileID: 128947186}
   inGame: {fileID: 0}
@@ -5078,11 +5078,11 @@ MonoBehaviour:
   finalVdoBeforeInGame: 0
   finalVdo: 1
   i: 0
-  nameVideo1: 
-  nameVideo2: 
+  nameVideo1: "\u0E09\u0E32\u0E01\u0E04\u0E38\u0E22_Talk25515-5819"
+  nameVideo2: loopbsit5820-6100
   idleVideo:
-  - {fileID: 32900000, guid: 1ad6450e26a06254b9032d62c14fbcd0, type: 3}
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   mainCamera: {fileID: 462570213}
   cameraForVideo: {fileID: 1474185928}
 --- !u!328 &128947188
@@ -57963,7 +57963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1812684681
 RectTransform:
   m_ObjectHideFlags: 0
