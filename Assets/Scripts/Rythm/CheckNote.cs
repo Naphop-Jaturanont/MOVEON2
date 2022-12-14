@@ -71,6 +71,7 @@ public class CheckNote : MonoBehaviour
                         quickTime.checkRhythm("fail");
                         Invoke("closePanel", 1.5f);
                         Debug.Log("Miss2");
+                        Debug.Log(beatScoller.hasStarted);
                     }
                 }               
                 break;

@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
 
     public Image[] sprite;
     public Sprite[] spriteInter;
+    public Sprite spriteDefault;
     private void Awake()
     {
         /*if (_instance != null) Destroy(this);
@@ -24,18 +25,29 @@ public class UIManager : MonoBehaviour
     }
     private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.F12))
+        {
+            Stage1.indexLightNovel[0] = false;
+            Stage1.SaveToFile();
+        }
     }
 
     public void OpenChapterUI()
     {
         ChapterSelectUI.SetActive(true);
+        Stage1.LoadDataFromFile();
+        Debug.Log(Stage1.indexLightNovel[0]);
         for (int i = 0; i <= Stage1.indexLightNovel.Length - 1; i++)
         {
             if (Stage1.indexLightNovel[i] == true && buttonChapter1[i] != null)
             {
                 buttonChapter1[i].interactable = true;
                 sprite[i].sprite = spriteInter[i];
+            }
+            if (Stage1.indexLightNovel[i] == false && buttonChapter1[i] != null)
+            {
+                buttonChapter1[i].interactable = false;
+                sprite[i].sprite = spriteDefault;
             }
         }
     }

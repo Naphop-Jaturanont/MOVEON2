@@ -23,8 +23,7 @@ public class NoteObject : MonoBehaviour
         checkNote = GameObject.Find("Check").GetComponent<CheckNote>();
         beatScoller = GetComponentInParent<BeatScoller>();
     }
-
-    private void Update()
+    private void FixedUpdate()
     {
         if(beatScoller.hasStarted == false)
         {

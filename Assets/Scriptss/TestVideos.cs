@@ -80,7 +80,7 @@ public class TestVideos : MonoBehaviour
     public VideoClip[] idleVideo = null;
 
     bool chose;
-
+    Color32 color;
     //solve camera
     public GameObject mainCamera;
     public GameObject cameraForVideo;
@@ -105,8 +105,8 @@ public class TestVideos : MonoBehaviour
         videoPlayer.clip = videoClip[i];
         videoPlayer.Play();
         maxTime = time;
+        Time.timeScale = 1;
     }
-
     private void Update()
     {
         if(finish == true)
@@ -114,7 +114,6 @@ public class TestVideos : MonoBehaviour
             unityEvent.Invoke();
             finish = false;
         }
-
         if (pauseGame.isPause == false)
         {
             if (wantChangeMusic == true)
@@ -134,8 +133,9 @@ public class TestVideos : MonoBehaviour
                         fadeImage.gameObject.SetActive(true);
                     }
                     colorAlpha -= 255 * Time.deltaTime;
+                    Debug.Log(colorAlpha);
                 }
-                Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                color = new Color32(0, 0, 0, (byte)colorAlpha);
                 fadeImage.color = color;
                 if (colorAlpha <= 0)
                 {
@@ -144,8 +144,6 @@ public class TestVideos : MonoBehaviour
                     colorAlpha = 0;
                 }
             }
-
-
             if (colorBoolAlpha == true)
             {
                 if (finalVdoBeforeInGame == true)
@@ -161,7 +159,7 @@ public class TestVideos : MonoBehaviour
                             }
                             colorAlpha += 255 * Time.deltaTime;
                         }
-                        Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                        color = new Color32(0, 0, 0, (byte)colorAlpha);
                         fadeImage.color = color;
                         if (colorAlpha >= 255)
                         {
@@ -198,7 +196,7 @@ public class TestVideos : MonoBehaviour
                         {
                             colorAlpha += 255 * Time.deltaTime;
                         }
-                        Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                        color = new Color32(0, 0, 0, (byte)colorAlpha);
                         fadeImage.color = color;
                         if (colorAlpha >= 255)
                         {
@@ -218,7 +216,7 @@ public class TestVideos : MonoBehaviour
                         }
                         colorAlpha += 255 * Time.deltaTime;
                     }
-                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    color = new Color32(0, 0, 0, (byte)colorAlpha);
                     fadeImage.color = color;
                     if (colorAlpha >= 255)
                     {
@@ -318,7 +316,7 @@ public class TestVideos : MonoBehaviour
                         }
                         colorAlpha += 255 * Time.deltaTime;
                     }
-                    Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
+                    color = new Color32(0, 0, 0, (byte)colorAlpha);
                     fadeImage.color = color;
                     if (colorAlpha >= 255 && finalVdo == false)
                     {

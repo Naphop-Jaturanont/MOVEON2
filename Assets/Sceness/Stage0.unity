@@ -5575,7 +5575,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
-  - {fileID: 32900000, guid: 495e67ce93880654e96d1d1c64b33b53, type: 3}
+  - {fileID: 32900000, guid: 31f170235c2d3984ea2a9e1d36df7962, type: 3}
   - {fileID: 32900000, guid: 89906156929e7164cbcf57add7d91747, type: 3}
   - {fileID: 32900000, guid: 631ab6ae424024b4e8d2aa999ad9ab96, type: 3}
   videoCheckpoint: {fileID: 1812684683}

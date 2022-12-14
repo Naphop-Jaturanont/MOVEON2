@@ -8,10 +8,13 @@ public class levelPass : MonoBehaviour
     public stage1 Stage1;
     private void Start()
     {
+        Debug.Log(PlayerPrefs.GetInt("levelisUlocked"));
         UnlockWay(SceneManager.GetActiveScene().buildIndex-2);
+        Stage1.SaveToFile();
     }
     private void Awake()
     {
+        UnlockWay(SceneManager.GetActiveScene().buildIndex - 2);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("continueScene", currentScene);
     }
@@ -25,6 +28,18 @@ public class levelPass : MonoBehaviour
             PlayerPrefs.SetInt("levelisUlocked", currentLevel + 1);
         }
 
+        
+    }
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().buildIndex - 2 >= 0)
+        {
+            if (Stage1.indexLightNovel[SceneManager.GetActiveScene().buildIndex - 2] != true)
+            {
+                UnlockWay(SceneManager.GetActiveScene().buildIndex - 2);
+            }
+        }
         
     }
 
