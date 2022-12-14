@@ -7,11 +7,11 @@ using UnityEngine.Video;
 public class AudioController : MonoBehaviour
 {
     public Slider _musicSlider, _sfxSlider;
-    public Slider videoSlider;
+    public Slider videoSlider = null;
     public float musicValue, sfxValue;
     public float videoValue;
 
-    public VideoPlayer videoplayer;
+    public VideoPlayer videoplayer=null;
 
     public void Start()
     {
@@ -23,7 +23,11 @@ public class AudioController : MonoBehaviour
     {
         _musicSlider.value = PlayerPrefs.GetFloat("save music");
         _sfxSlider.value = PlayerPrefs.GetFloat("save sfx");
-        videoSlider.value = videoplayer.GetDirectAudioVolume(0);
+        if(videoSlider != null)
+        {
+            videoSlider.value = videoplayer.GetDirectAudioVolume(0);
+        }
+        
         
     }
     public void MusicVolume()

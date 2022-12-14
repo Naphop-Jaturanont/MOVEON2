@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5b51a22bfd58148a22846511ea07fe, type: 3}
   m_Name: New Stage1
   m_EditorClassIdentifier: 
+  scoreOfChoice: 0
   passStage: 0
   indexLightNovel: 000000000000

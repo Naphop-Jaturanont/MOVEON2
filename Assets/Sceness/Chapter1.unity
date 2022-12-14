@@ -1920,6 +1920,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -4614,6 +4615,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -5053,7 +5055,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   videoCheckpoint: {fileID: 128947186}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 1810962978}
+  loopWhileChoose: {fileID: 0}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -5067,7 +5069,7 @@ MonoBehaviour:
   time: 0
   timeWhenChoose: 20
   FadeIn: 0
-  FadeOut: 0
+  FadeOut: 1
   CheckFadeOut: 0
   loopArray: 0
   oneFrame: 1
@@ -5077,6 +5079,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 1
+  finish: 0
   i: 0
   nameVideo1: "\u0E09\u0E32\u0E01\u0E04\u0E38\u0E22_Talk25515-5819"
   nameVideo2: loopbsit5820-6100
@@ -6424,6 +6427,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -9970,6 +9974,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -14047,6 +14052,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -15097,6 +15103,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -17144,6 +17151,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -18673,6 +18681,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -19432,6 +19441,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 1
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -21934,6 +21944,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -22796,7 +22807,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 07c19fb2e250bd14ba9e17e1d4178e6c, type: 3}
   videoCheckpoint: {fileID: 691247861}
   inGame: {fileID: 717360059}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 717360059}
   choice1: {fileID: 717360059}
   choice2: {fileID: 717360059}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -22814,12 +22825,13 @@ MonoBehaviour:
   CheckFadeOut: 0
   loopArray: 0
   oneFrame: 0
-  fadeImage: {fileID: 691247864}
+  fadeImage: {fileID: 1552975828}
   colorAlpha: 0
   myColor: {r: 0, g: 0, b: 0, a: 0}
   colorBoolAlpha: 0
-  finalVdoBeforeInGame: 1
+  finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -24083,7 +24095,115 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unityEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 717360062}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1650752754}
+        m_TargetAssemblyTypeName: QuickTimeEvent, Assembly-CSharp
+        m_MethodName: ResetImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 56209730}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1670675385}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 20
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1700145392}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1621893845}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 20
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1956146602}
+        m_TargetAssemblyTypeName: DraggableUI, Assembly-CSharp
+        m_MethodName: ResetBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 416960595}
+        m_TargetAssemblyTypeName: DraggableUI, Assembly-CSharp
+        m_MethodName: ResetBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1650752751}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 20
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   type: 0
   videoPlayer: {fileID: 717360063}
   videoClip:
@@ -24115,6 +24235,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -24391,6 +24512,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -25861,6 +25983,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -30096,6 +30219,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: asdafw0001-0245
   nameVideo2: solve20001-0250
@@ -32993,6 +33117,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -34133,6 +34258,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -40162,6 +40288,7 @@ GameObject:
   - component: {fileID: 1289550333}
   - component: {fileID: 1289550335}
   - component: {fileID: 1289550334}
+  - component: {fileID: 1289550336}
   m_Layer: 5
   m_Name: timerbtn2
   m_TagString: Untagged
@@ -40230,6 +40357,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289550332}
   m_CullTransparentMesh: 1
+--- !u!95 &1289550336
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289550332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 12052e4695d119f4fa4dfc4fe7364785, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1290081411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2764951679793644854, guid: da5180a4b9578a448afd7a1e943084ae,
@@ -44317,6 +44464,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -45136,6 +45284,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: blackopenconver
   nameVideo2: 'purple '
@@ -46927,6 +47076,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: asdafw0001-0245
   nameVideo2: asdafw0001-0186
@@ -47945,6 +48095,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -50513,6 +50664,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -51207,6 +51359,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -52389,6 +52542,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -52641,6 +52795,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -53442,6 +53597,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: asdafw0001-0245
   nameVideo2: solve0001-0250
@@ -53818,7 +53974,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unityEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1621893845}
+        m_TargetAssemblyTypeName: TestVideos, Assembly-CSharp
+        m_MethodName: ResetIndex
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 20
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   type: 0
   videoPlayer: {fileID: 1700145393}
   videoClip:
@@ -53849,6 +54017,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -56880,6 +57049,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -57902,6 +58072,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -58077,6 +58248,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 1
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -58628,6 +58800,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: 
   nameVideo2: 
@@ -62972,6 +63145,7 @@ MonoBehaviour:
   colorBoolAlpha: 0
   finalVdoBeforeInGame: 0
   finalVdo: 0
+  finish: 0
   i: 0
   nameVideo1: asdafw0001-0186
   nameVideo2: asdafw0001-0245

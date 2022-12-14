@@ -15,7 +15,7 @@ public enum typePlay
 
 public class TestVideos : MonoBehaviour
 {
-    public UnityEvent unityEvent = null;
+    public UnityEvent unityEvent;
     public typePlay type;
     public VideoPlayer videoPlayer;
     public VideoClip[] videoClip;
@@ -23,7 +23,7 @@ public class TestVideos : MonoBehaviour
     private Checkpoint checkpoint;
     private QuickTimeEvent quickTime;
     private DialogOnVDO dialog;
-    public GameObject inGame = null;
+    public GameObject inGame = null;    
     public GameObject loopWhileChoose = null;
     public GameObject choice1 = null;
     public GameObject choice2 = null;
@@ -69,6 +69,7 @@ public class TestVideos : MonoBehaviour
     [SerializeField]private bool colorBoolAlpha = false;
     public bool finalVdoBeforeInGame = false;
     public bool finalVdo = false;
+    public bool finish = false;
     private bool isPause;
 
     //public VideoClip videoClipchose1;
@@ -108,6 +109,12 @@ public class TestVideos : MonoBehaviour
 
     private void Update()
     {
+        if(finish == true)
+        {
+            unityEvent.Invoke();
+            finish = false;
+        }
+
         if (pauseGame.isPause == false)
         {
             if (wantChangeMusic == true)
@@ -167,6 +174,7 @@ public class TestVideos : MonoBehaviour
                             fadeImage.gameObject.SetActive(false);
                             inGame.SetActive(true);
                             gameObject.SetActive(false);
+                            finish = true;
                             return;
                         }
                     }
@@ -176,6 +184,7 @@ public class TestVideos : MonoBehaviour
                         cameraForVideo.SetActive(false);
                         inGame.SetActive(true);
                         gameObject.SetActive(false);
+                        finish = true;
                     }
                     return;
                 }
@@ -220,6 +229,7 @@ public class TestVideos : MonoBehaviour
                         loopWhileChoose.SetActive(true);
                         FadeOut = false;
                         colorAlpha = 255;
+                        finish = true;
                         return;
                     }
                 }
@@ -229,6 +239,7 @@ public class TestVideos : MonoBehaviour
                     checkpoint.PassVideoWantCheck++;
                     audioController.ChangeVideoScripts(loopWhileChoose);
                     loopWhileChoose.SetActive(true);
+                    finish = true;
                     return;
 
                 }
@@ -282,13 +293,13 @@ public class TestVideos : MonoBehaviour
                         if(FadeOut == true)
                         {
                             CheckFadeOut = true;
-                        }
-                        else
+                        }else
                         {
                             gameObject.SetActive(false);
                             checkpoint.PassVideoWantCheck++;
                             audioController.ChangeVideoScripts(loopWhileChoose);
                             loopWhileChoose.SetActive(true);
+                            finish = true;
                         }                       
                         return;
                     }
@@ -309,7 +320,7 @@ public class TestVideos : MonoBehaviour
                     }
                     Color32 color = new Color32(0, 0, 0, (byte)colorAlpha);
                     fadeImage.color = color;
-                    if (colorAlpha >= 255)
+                    if (colorAlpha >= 255 && finalVdo == false)
                     {
                         fadeImage.gameObject.SetActive(false);
                         gameObject.SetActive(false);
@@ -317,8 +328,12 @@ public class TestVideos : MonoBehaviour
                         audioController.ChangeVideoScripts(loopWhileChoose);
                         loopWhileChoose.SetActive(true);
                         FadeOut = false;
+                        finish = true;
                         colorAlpha = 255;
                         return;
+                    }else if(colorAlpha >= 255 && finalVdo == true)
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                     }
                 }
             }

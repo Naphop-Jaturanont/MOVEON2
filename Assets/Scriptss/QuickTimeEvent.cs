@@ -213,7 +213,8 @@ public class QuickTimeEvent : MonoBehaviour
     {
         fillImage.fillAmount = 0;
         colorAlpha = 0;
-        animator.CrossFadeInFixedTime("SpacebarUICtrl", 0.1f);
+        fillImage.color = Color.green;
+        //animator.CrossFadeInFixedTime("SpacebarUICtrl", 0.1f);
     }
 
     public void checkRhythm(string type)

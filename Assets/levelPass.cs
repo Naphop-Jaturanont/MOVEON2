@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class levelPass : MonoBehaviour
 {
     public stage1 Stage1;
+    private void Start()
+    {
+        UnlockWay(SceneManager.GetActiveScene().buildIndex-2);
+    }
     private void Awake()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -26,6 +30,10 @@ public class levelPass : MonoBehaviour
 
     public void UnlockWay(int index)
     {
-        Stage1.indexLightNovel[index] = true;
+        if(index >= 0)
+        {
+            Stage1.indexLightNovel[index] = true;
+        }
+        
     }
 }

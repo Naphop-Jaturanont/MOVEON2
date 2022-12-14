@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject ChapterSelectUI;
 
+    public Image[] sprite;
+    public Sprite[] spriteInter;
     private void Awake()
     {
         /*if (_instance != null) Destroy(this);
@@ -33,6 +35,7 @@ public class UIManager : MonoBehaviour
             if (Stage1.indexLightNovel[i] == true && buttonChapter1[i] != null)
             {
                 buttonChapter1[i].interactable = true;
+                sprite[i].sprite = spriteInter[i];
             }
         }
     }
