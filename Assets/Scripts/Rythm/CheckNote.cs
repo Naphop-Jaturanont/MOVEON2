@@ -22,10 +22,13 @@ public class CheckNote : MonoBehaviour
     public Animator animator;
     public bool canPress = true;
 
+    public AudioManager audioManager;
+
     private void Awake()
     {
         notemanager = GameObject.Find("notemanager").GetComponent<Notemanager>();
         animator = gameObject.GetComponent<Animator>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     // Start is called before the first frame update
@@ -51,6 +54,7 @@ public class CheckNote : MonoBehaviour
             case state.FirstBtn:
                 if (Input.GetKeyDown(quickTime.key1) && notemanager.changePress[0] == true && canPress == true)
                 {
+
                     animator.SetTrigger("Press");
                     if (canBePressed)
                     {
