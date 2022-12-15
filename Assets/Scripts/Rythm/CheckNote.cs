@@ -58,6 +58,7 @@ public class CheckNote : MonoBehaviour
                     animator.SetTrigger("Press");
                     if (canBePressed)
                     {
+                        audioManager.PlaySFX("heartbeat1");
                         noteObject.k = true;
                         img.color = color1;
                         if (noteObject.finalNote == true)
@@ -77,11 +78,12 @@ public class CheckNote : MonoBehaviour
                         Debug.Log("Miss2");
                         Debug.Log(beatScoller.hasStarted);
                     }
-                }               
+                }
                 break;
             case state.SecondBtn:
                 if (Input.GetKeyDown(quickTime.key2) && notemanager.changePress[1] == true && canPress == true)
                 {
+                    
                     animator.SetTrigger("Press");
                     if (canBePressed)
                     {
