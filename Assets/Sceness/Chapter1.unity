@@ -5056,7 +5056,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
   videoCheckpoint: {fileID: 128947186}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 971019432}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -5698,10 +5698,12 @@ RectTransform:
   - {fileID: 128947184}
   - {fileID: 971019433}
   - {fileID: 1772295019}
+  - {fileID: 1775876569}
   - {fileID: 1156842081}
   - {fileID: 1373137018}
   - {fileID: 656844438}
   - {fileID: 528262067}
+  - {fileID: 958266043}
   - {fileID: 1003636438}
   - {fileID: 784571876}
   - {fileID: 2054858167}
@@ -18390,7 +18392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &528262067
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18406,7 +18408,7 @@ RectTransform:
   - {fileID: 1539501659}
   - {fileID: 513494077}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18480,7 +18482,7 @@ MonoBehaviour:
   type: 1
   videoPlayer: {fileID: 528262071}
   videoClip:
-  - {fileID: 32900000, guid: 018a9897402a81745acc880dded67ab5, type: 3}
+  - {fileID: 32900000, guid: 7eae4124629ae374490f3faaac84e910, type: 3}
   videoCheckpoint: {fileID: 528262069}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 528262066}
@@ -22554,7 +22556,7 @@ RectTransform:
   m_Children:
   - {fileID: 276682529}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22616,24 +22618,19 @@ MonoBehaviour:
   type: 2
   videoPlayer: {fileID: 656844442}
   videoClip:
-  - {fileID: 32900000, guid: 11b8a9f647377a1458d9cea55e7137e8, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
+  - {fileID: 32900000, guid: 3f41c715f8e68444293f27dd235978c0, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: 7eae4124629ae374490f3faaac84e910, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: 7eae4124629ae374490f3faaac84e910, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
   videoCheckpoint: {fileID: 656844440}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 0}
@@ -22662,10 +22659,10 @@ MonoBehaviour:
   finalVdo: 0
   finish: 0
   i: 0
-  nameVideo1: "\u0E09\u0E32\u0E01\u0E04\u0E38\u0E22_Talk25515-5819"
+  nameVideo1: blackloop
   nameVideo2: loopbsit5820-6100
   idleVideo:
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: 7eae4124629ae374490f3faaac84e910, type: 3}
   - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
   mainCamera: {fileID: 462570213}
   cameraForVideo: {fileID: 1474185928}
@@ -24067,7 +24064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &689653489
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27527,7 +27524,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 42
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32693,6 +32690,142 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1647318651}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &958266042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958266043}
+  - component: {fileID: 958266046}
+  - component: {fileID: 958266045}
+  - component: {fileID: 958266044}
+  m_Layer: 5
+  m_Name: VideoWalktogether (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &958266043
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958266042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145715674}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &958266044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958266042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &958266045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958266042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  type: 0
+  videoPlayer: {fileID: 958266046}
+  videoClip:
+  - {fileID: 32900000, guid: a7d1fccf135274f4f9203cc258bd0540, type: 3}
+  videoCheckpoint: {fileID: 958266044}
+  inGame: {fileID: 0}
+  loopWhileChoose: {fileID: 458809901}
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
+  pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
+  imageValue: {fileID: 0}
+  imageValue1: {fileID: 0}
+  timer: 0
+  time: 0
+  timeWhenChoose: 20
+  FadeIn: 1
+  FadeOut: 0
+  CheckFadeOut: 0
+  loopArray: 0
+  oneFrame: 0
+  fadeImage: {fileID: 1552975828}
+  colorAlpha: 0
+  myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
+  finish: 0
+  i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
+  mainCamera: {fileID: 462570213}
+  cameraForVideo: {fileID: 1474185928}
+--- !u!328 &958266046
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958266042}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1474185929}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 1
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &959028099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33159,8 +33292,8 @@ MonoBehaviour:
   videoClip:
   - {fileID: 32900000, guid: 6d78da6c1da9d3449ad186b6deef9008, type: 3}
   videoCheckpoint: {fileID: 971019435}
-  inGame: {fileID: 674752384}
-  loopWhileChoose: {fileID: 674752384}
+  inGame: {fileID: 1772295018}
+  loopWhileChoose: {fileID: 1772295018}
   choice1: {fileID: 289729403}
   choice2: {fileID: 289729403}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -34387,7 +34520,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 41
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39355,7 +39488,7 @@ RectTransform:
   m_Children:
   - {fileID: 643203475}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -39417,27 +39550,11 @@ MonoBehaviour:
   type: 2
   videoPlayer: {fileID: 1156842085}
   videoClip:
-  - {fileID: 32900000, guid: 11b8a9f647377a1458d9cea55e7137e8, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
   videoCheckpoint: {fileID: 1156842083}
-  inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  inGame: {fileID: 1373137017}
+  loopWhileChoose: {fileID: 1373137017}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -46045,7 +46162,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46090,7 +46207,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1373137022}
   videoClip:
-  - {fileID: 32900000, guid: aae79fd175c8fa545a7a1024f73011c3, type: 3}
+  - {fileID: 32900000, guid: a6b140f1eec974f4fb49192aaf000b55, type: 3}
   videoCheckpoint: {fileID: 1373137020}
   inGame: {fileID: 128947183}
   loopWhileChoose: {fileID: 128947183}
@@ -52079,7 +52196,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145715674}
-  m_RootOrder: 44
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -60257,7 +60374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1772295019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60334,27 +60451,15 @@ MonoBehaviour:
   type: 2
   videoPlayer: {fileID: 1772295023}
   videoClip:
-  - {fileID: 32900000, guid: 11b8a9f647377a1458d9cea55e7137e8, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: 3c0aa89aa9b669446a91e84e5a8c7b0d, type: 3}
+  - {fileID: 32900000, guid: 1d33f8d2b0184384daf0c19aa6ea19fe, type: 3}
+  - {fileID: 32900000, guid: 1d33f8d2b0184384daf0c19aa6ea19fe, type: 3}
+  - {fileID: 32900000, guid: 92fa7168109da034db603af9d15476ee, type: 3}
+  - {fileID: 32900000, guid: 1d33f8d2b0184384daf0c19aa6ea19fe, type: 3}
+  - {fileID: 32900000, guid: 1d33f8d2b0184384daf0c19aa6ea19fe, type: 3}
   videoCheckpoint: {fileID: 1772295021}
   inGame: {fileID: 0}
-  loopWhileChoose: {fileID: 0}
+  loopWhileChoose: {fileID: 1775876564}
   choice1: {fileID: 0}
   choice2: {fileID: 0}
   Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
@@ -60380,11 +60485,11 @@ MonoBehaviour:
   finalVdo: 0
   finish: 0
   i: 0
-  nameVideo1: "\u0E09\u0E32\u0E01\u0E04\u0E38\u0E22_Talk25515-5819"
-  nameVideo2: loopbsit5820-6100
+  nameVideo1: blackAnswer
+  nameVideo2: purpleLoop1
   idleVideo:
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
+  - {fileID: 32900000, guid: 7a1d5ac05d0e98944a66f4d8a3935ffb, type: 3}
+  - {fileID: 32900000, guid: 8c958060bff10be41b5e490cf7c37ce7, type: 3}
   mainCamera: {fileID: 462570213}
   cameraForVideo: {fileID: 1474185928}
 --- !u!328 &1772295023
@@ -60628,6 +60733,153 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1651495607}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775876564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775876569}
+  - component: {fileID: 1775876568}
+  - component: {fileID: 1775876567}
+  - component: {fileID: 1775876566}
+  - component: {fileID: 1775876565}
+  m_Layer: 5
+  m_Name: VDOKeepstick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!222 &1775876565
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775876564}
+  m_CullTransparentMesh: 1
+--- !u!114 &1775876566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775876564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc43a780523e2844824fefd23080d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1775876567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775876564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67048bfeccbc5074c890780d39a9d707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  type: 0
+  videoPlayer: {fileID: 1775876568}
+  videoClip:
+  - {fileID: 32900000, guid: e0f681adeeee87444bfd7bbd40c490fc, type: 3}
+  videoCheckpoint: {fileID: 1775876566}
+  inGame: {fileID: 1156842080}
+  loopWhileChoose: {fileID: 1156842080}
+  choice1: {fileID: 128947183}
+  choice2: {fileID: 128947183}
+  Stage1: {fileID: 11400000, guid: 8f4cdbf9d1d9997438418b570850e470, type: 2}
+  pauseGame: {fileID: 0}
+  audioController: {fileID: 145715676}
+  ChangeMusic: {fileID: 0}
+  wantChangeMusic: 0
+  imageValue: {fileID: 0}
+  imageValue1: {fileID: 0}
+  timer: 0
+  time: 20
+  timeWhenChoose: 1
+  FadeIn: 0
+  FadeOut: 0
+  CheckFadeOut: 0
+  loopArray: 0
+  oneFrame: 0
+  fadeImage: {fileID: 784571877}
+  colorAlpha: 255
+  myColor: {r: 0, g: 0, b: 0, a: 0}
+  colorBoolAlpha: 0
+  finalVdoBeforeInGame: 0
+  finalVdo: 0
+  finish: 0
+  i: 0
+  nameVideo1: 
+  nameVideo2: 
+  idleVideo: []
+  mainCamera: {fileID: 462570213}
+  cameraForVideo: {fileID: 1474185928}
+--- !u!328 &1775876568
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775876564}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1474185929}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 1
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!224 &1775876569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775876564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145715674}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1776977466
 GameObject:
   m_ObjectHideFlags: 0
@@ -71401,7 +71653,7 @@ RectTransform:
   - {fileID: 1773357682}
   - {fileID: 889993741}
   m_Father: {fileID: 145715674}
-  m_RootOrder: 43
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
