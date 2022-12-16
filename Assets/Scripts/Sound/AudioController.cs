@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour
     public Slider videoSlider = null;
     public float musicValue, sfxValue;
     public float videoValue;
+    private float recordVideoSound = 1.0f;
 
     public VideoPlayer videoplayer=null;
 
@@ -17,18 +18,29 @@ public class AudioController : MonoBehaviour
     {
         PlayerPrefs.SetFloat("save music",1f);
         PlayerPrefs.SetFloat("save sfx",1f);
-        
+        PlayerPrefs.SetFloat("save videoSound", recordVideoSound);
+
     }
     private void Update()
     {
         _musicSlider.value = PlayerPrefs.GetFloat("save music");
         _sfxSlider.value = PlayerPrefs.GetFloat("save sfx");
-        if(videoSlider != null)
+        if (videoSlider != null)
         {
+            videoplayer.SetDirectAudioVolume(0, PlayerPrefs.GetFloat("save videoSound"));
             videoSlider.value = videoplayer.GetDirectAudioVolume(0);
+            if(PlayerPrefs.GetFloat("save videoSound") == 0)
+            {
+                ChangeVDOSlider(recordVideoSound);
+            }
         }
-        
-        
+        Debug.Log(PlayerPrefs.GetFloat("save videoSound"));
+        if(PlayerPrefs.GetFloat("save videoSound") != 1f)
+        {
+            recordVideoSound = PlayerPrefs.GetFloat("save videoSound");
+        }
+
+
     }
     public void MusicVolume()
     {

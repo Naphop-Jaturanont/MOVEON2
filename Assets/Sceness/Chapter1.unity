@@ -1892,8 +1892,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 56209731}
   videoClip:
-  - {fileID: 32900000, guid: f6dd070bd21a53341b7a8f0ad058110d, type: 3}
-  - {fileID: 32900000, guid: 59306a48ddbec38449d30a59f15ce614, type: 3}
+  - {fileID: 32900000, guid: 6d6f9839bb799074882635ddbd244131, type: 3}
   videoCheckpoint: {fileID: 56209729}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1670675383}
@@ -5036,24 +5035,24 @@ MonoBehaviour:
   type: 2
   videoPlayer: {fileID: 128947188}
   videoClip:
-  - {fileID: 32900000, guid: 11b8a9f647377a1458d9cea55e7137e8, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
   videoCheckpoint: {fileID: 128947186}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 971019432}
@@ -5082,11 +5081,11 @@ MonoBehaviour:
   finalVdo: 0
   finish: 0
   i: 0
-  nameVideo1: "\u0E09\u0E32\u0E01\u0E04\u0E38\u0E22_Talk25515-5819"
-  nameVideo2: loopbsit5820-6100
+  nameVideo1: 0001-0305
+  nameVideo2: 0001-0281
   idleVideo:
-  - {fileID: 32900000, guid: 3bd1dd5e2c67db543b828325a03acd40, type: 3}
-  - {fileID: 32900000, guid: 1c9b09e29dd25e34a935753e961292ea, type: 3}
+  - {fileID: 32900000, guid: a96fb5b847ab3454ea9e863d020b2a5f, type: 3}
+  - {fileID: 32900000, guid: 3c08c87a6e1836541bbc4ea83ba605bb, type: 3}
   mainCamera: {fileID: 462570213}
   cameraForVideo: {fileID: 1474185928}
 --- !u!328 &128947188
@@ -6488,7 +6487,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 173596509}
   videoClip:
-  - {fileID: 32900000, guid: a79a097fe2380f14ab864f29b1753d82, type: 3}
+  - {fileID: 32900000, guid: 2e8ed77bc5ecf2a429a0ae16be154570, type: 3}
   videoCheckpoint: {fileID: 173596507}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1676739336}
@@ -9270,7 +9269,7 @@ MonoBehaviour:
   musicName: stage1
   when: 1
   fadeout: 0
-  fadein: 0
+  fadein: 1
 --- !u!1001 &259439808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10500,8 +10499,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 289729407}
   videoClip:
-  - {fileID: 32900000, guid: d2444e1a93673cc4d946b330e1a09f4a, type: 3}
-  - {fileID: 32900000, guid: e95493318cde4b14bb2c8bd2960149d3, type: 3}
+  - {fileID: 32900000, guid: d3dc0d44a7733d14c89347010e616688, type: 3}
   videoCheckpoint: {fileID: 289729405}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 2067795220}
@@ -21062,7 +21060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointFade: 0
+  pointFade: 1
   audioManager: {fileID: 0}
   musicName: 0
   when: 0
@@ -23566,7 +23564,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 674752390}
   videoClip:
-  - {fileID: 32900000, guid: bb918429d9b2cd74ba1f75449826b28c, type: 3}
+  - {fileID: 32900000, guid: 74b6204d5b83cf849904212336f9951b, type: 3}
   videoCheckpoint: {fileID: 674752388}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1443646177}
@@ -24601,7 +24599,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 691247863}
   videoClip:
-  - {fileID: 32900000, guid: 07c19fb2e250bd14ba9e17e1d4178e6c, type: 3}
+  - {fileID: 32900000, guid: dbc4f0b0e667831418daf5e15c617182, type: 3}
   videoCheckpoint: {fileID: 691247861}
   inGame: {fileID: 717360059}
   loopWhileChoose: {fileID: 717360059}
@@ -25974,8 +25972,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 717360063}
   videoClip:
-  - {fileID: 32900000, guid: 796ee9284b14a27499f868d7c7dfeca6, type: 3}
-  - {fileID: 32900000, guid: c6ade6c025b2279479b135999399f4d2, type: 3}
+  - {fileID: 32900000, guid: 1705079af810f6343a300ada68738392, type: 3}
   videoCheckpoint: {fileID: 717360061}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1650752749}
@@ -35749,7 +35746,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1035916262}
   videoClip:
-  - {fileID: 32900000, guid: 04b02e1a2391fbc4c8e56db531c3ea8b, type: 3}
+  - {fileID: 32900000, guid: 63d6033103f159448aded38b5e641286, type: 3}
   videoCheckpoint: {fileID: 1035916260}
   inGame: {fileID: 1810531440}
   loopWhileChoose: {fileID: 0}
@@ -48140,7 +48137,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1420785893}
   videoClip:
-  - {fileID: 32900000, guid: fccd74af62f3ae0488b0315534bb587d, type: 3}
+  - {fileID: 32900000, guid: ee2b54f004d305843a96d3be4f0fc6b0, type: 3}
   videoCheckpoint: {fileID: 1420785891}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1486396937}
@@ -49242,7 +49239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e637573d33d3c6543888223fe73095d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointFade: 0
+  pointFade: 1
   audioManager: {fileID: 0}
   musicName: 0
   when: 0
@@ -55410,7 +55407,7 @@ MonoBehaviour:
   type: 1
   videoPlayer: {fileID: 1650752753}
   videoClip:
-  - {fileID: 32900000, guid: dbfdaa21bcb985444831d28033d5756b, type: 3}
+  - {fileID: 32900000, guid: 55b97b422e8f87842a0196411bc9a7cb, type: 3}
   videoCheckpoint: {fileID: 1650752752}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1650752749}
@@ -56922,8 +56919,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1676739340}
   videoClip:
-  - {fileID: 32900000, guid: 30ae60d38c2fea848be62d63017005cb, type: 3}
-  - {fileID: 32900000, guid: e4f214dceca72b94ea39f2a013e844a9, type: 3}
+  - {fileID: 32900000, guid: 72ca35c6a4470214aaaf5f246a269e0c, type: 3}
   videoCheckpoint: {fileID: 1676739338}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 717360059}
@@ -58157,7 +58153,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1700145393}
   videoClip:
-  - {fileID: 32900000, guid: c3ecbf64bbe0bea4f95475606de76c6d, type: 3}
+  - {fileID: 32900000, guid: 85730cce600d2a6408c95b9dcf4b8c40, type: 3}
   videoCheckpoint: {fileID: 1700145391}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 1621893843}
@@ -61719,7 +61715,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1778765760}
   videoClip:
-  - {fileID: 32900000, guid: e13edf6e1f75e6242939e0f69a90edff, type: 3}
+  - {fileID: 32900000, guid: 4aaa8e0160d4cfa43a322750cb0f1908, type: 3}
   videoCheckpoint: {fileID: 1778765758}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 120489211}
@@ -62847,7 +62843,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1810962984}
   videoClip:
-  - {fileID: 32900000, guid: aae79fd175c8fa545a7a1024f73011c3, type: 3}
+  - {fileID: 32900000, guid: 5f7aece77d2a3e74495e4b55482132d1, type: 3}
   videoCheckpoint: {fileID: 1810962982}
   inGame: {fileID: 128947183}
   loopWhileChoose: {fileID: 128947183}
@@ -63034,7 +63030,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1812684682}
   videoClip:
-  - {fileID: 32900000, guid: d4124e492a4fdf84785bec322d9b7c86, type: 3}
+  - {fileID: 32900000, guid: 1c99d377cb637f649a814ff733b6c667, type: 3}
   videoCheckpoint: {fileID: 1812684683}
   inGame: {fileID: 1510146428}
   loopWhileChoose: {fileID: 0}
@@ -63584,8 +63580,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 1831505447}
   videoClip:
-  - {fileID: 32900000, guid: 5ee9de9d99e43b744ba1c8af78ae8747, type: 3}
-  - {fileID: 32900000, guid: 2f0b14d8a936be647b90f9096696d88a, type: 3}
+  - {fileID: 32900000, guid: c494365e59fa7ee4db74cd834ef3ed60, type: 3}
   videoCheckpoint: {fileID: 1831505445}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 566303054}
@@ -72891,8 +72886,7 @@ MonoBehaviour:
   type: 0
   videoPlayer: {fileID: 2067795224}
   videoClip:
-  - {fileID: 32900000, guid: d2444e1a93673cc4d946b330e1a09f4a, type: 3}
-  - {fileID: 32900000, guid: e95493318cde4b14bb2c8bd2960149d3, type: 3}
+  - {fileID: 32900000, guid: 5160b178a7f4eec4ea390f74ab668b42, type: 3}
   videoCheckpoint: {fileID: 2067795222}
   inGame: {fileID: 0}
   loopWhileChoose: {fileID: 458809901}

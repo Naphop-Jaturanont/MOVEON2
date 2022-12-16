@@ -118,8 +118,10 @@ public class TestVideos : MonoBehaviour
         {
             if (wantChangeMusic == true)
             {
-                if (videoPlayer.time >= ((videoClip[i].length * 3) / 4))
+                Debug.Log(videoPlayer.time);
+                if (videoPlayer.time >= 3.75)
                 {
+                    Debug.Log(videoPlayer.time);
                     ChangeMusic.fadeout = true;
                     wantChangeMusic = false;
                 }
@@ -133,7 +135,6 @@ public class TestVideos : MonoBehaviour
                         fadeImage.gameObject.SetActive(true);
                     }
                     colorAlpha -= 255 * Time.deltaTime;
-                    Debug.Log(colorAlpha);
                 }
                 color = new Color32(0, 0, 0, (byte)colorAlpha);
                 fadeImage.color = color;
